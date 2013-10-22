@@ -64,9 +64,13 @@ hr {
 }
 .clr {
 	clear: both;
+	display: block;
 }
 .center {
 	text-align: center;
+}
+small.clr {
+	margin: 0 0 3em;
 }
 
 /*** header ***/
@@ -76,9 +80,18 @@ header {
 	background-size: cover;
 	display: table;
 	width: 100%;
-	height: 20em;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
+	height: 20em;
+}
+.i header {
+	background: none;
+	display: block;
+	text-align: left;
+	z-index: 1;
+	position: static;
+	height: auto;
 }
 header h2 {
 	font-size: 4em;
@@ -89,6 +102,19 @@ header h2 {
 	height: 100%;
 	vertical-align: middle;
 	background: rgba(0,0,0,0.5);
+}
+.i header h2 {
+	background: none;
+	font-size: 2em;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	opacity: .5;
+	padding: 0;
+	cursor: pointer;
+}
+.i header h2:hover {
+	opacity: 1;
 }
 header h2 span {
 	position: relative;
@@ -107,6 +133,17 @@ header h2 a {
 	transform: rotate(-4deg);
 	text-shadow: -1px 4px 0 rgba(0,0,0,0.25);
 }
+.i header h2 a {
+	text-shadow: none;
+	display: inline-block;
+	color: #253435;
+	padding: 1em .5em .5em;
+}
+
+/*.i header h2:hover a {
+	color: #ff4c00;
+}*/
+
 header em {
 	font-style: normal;
 	color: white;
@@ -115,6 +152,10 @@ header em {
 	top: 8px;
 	left: -6px;
 	font-size: 50%;
+}
+.i header em {
+	color: #253435;
+	left: -3px;
 }
 .nav, .btn {
 	display: inline-block;
@@ -126,6 +167,17 @@ header em {
 	border-radius: 3px;
 	border: 3px solid #ff4c00;
 }
+.i .nav {
+	position: fixed;
+	top: auto;
+	bottom: 1.2em;
+	right: 12em;
+	font-size: .75em;
+	border-color: #ccc;
+	color: #ccc;
+	text-shadow: none;
+	display: none;
+}
 .left {
 	right: auto;
 	left: 1.75em;
@@ -134,6 +186,10 @@ header em {
 .nav:hover, .nav:focus {
 	background: #ff4c00;
 	/*border-color: #8C2B01;*/
+}
+.i .nav:hover {
+	background: #ccc;
+	color: white;
 }
 .btn {
 	position: static;
@@ -169,7 +225,7 @@ header em {
 	border-left-width: 1px;
 	border-radius: 0 3px 3px 0;	
 }
-.btn:hover {
+.btn:hover, .btn:focus {
 	background: #8C2B01;
 }
 .nav:active, .btn:active {
@@ -177,12 +233,15 @@ header em {
 	border-color: #8C2B01;
 	color: rgba(255,255,255,0.75);
 }
+h1 strong {
+	font-weight: 400;
+}
 
 
-.main {
+.main, .main.list {
 	max-width: 32.5em;
 	margin: 0 auto;
-	padding: 2em;
+	padding: 1em;
 }
 .main h1 {
 	letter-spacing: -1px;
@@ -207,9 +266,9 @@ header em {
 .right span {
 	margin-left: 8px;
 }
-.list:hover {
+/*.list:hover {
 	background: rgba(255,255,0,0.15);
-}
+}*/
 .right {
 	float: right;
 }
@@ -235,14 +294,101 @@ header em {
 	padding: 0;
 	border: 0;
 }
-.list li:after {
+.list .last {
+	border: 0;
+}
+/*.list li:after {
 	content: ",";
 }
-.list li:last-child:after {
+.list li:last-child:after, .list .last:after {
 	content: "";
+}*/
+.list li.add {
+	background: #efefef;
+	padding: .5em;
+	margin-top: 1em;
+	color: #ccc;
+	cursor: pointer;
+}
+
+.i {
+	font-size: 125%;
+	/*background: #efefef;
+	background: rgba(255,255,0,0.05);
+	padding: .5em;*/
+}
+.i .list {
+	padding: 1em;
+	background: white;
+	position: relative;
+	z-index: 100;
+	border: 0;
+	border-bottom: 3px solid #ddd;
+}
+.list li a {
+	/*background: rgba(0,0,0,0.05);
+	border-radius: 100%;*/
+	color: #ff4c00;
+	padding: 2px 8px;
+	display: inline-block;
+	text-decoration: none;
+}
+.list li a:active {
+	/*background: rgba(0,0,0,0.15);*/
+	color: #A33303;
+}
+.i .list:hover {
+	background: white;
+}
+.i .main {
+	margin: 0;
+}
+.i .list small span {
+	font-size: 125%;
+}
+.i small a {
+	text-decoration: none;
+	color: #040407;
+}
+
+.hide {
+	height: 0;
+	overflow: hidden;
+}
+.show {
+	height: auto;
+}
+.hide p {
+	font-size: 75%;
+	color: #253435;
+	opacity: .65;
 }
 
 @media screen and (min-width:45em){
+.i header h2 a {
+	padding: 1em 0 .25em;
+}
+.i, .i body {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.i body {
+	display: table-cell;
+	vertical-align: middle;
+}
+.i {
+	padding: 2em;
+}
+.i .list {
+	padding: 2em;
+	border: 3px solid #ddd;
+}
+.list li a {
+	float: right;
+	position: relative;
+	top: -2px;
+}
 .btn {
 	font-size: 1.25em;
 }
@@ -250,6 +396,10 @@ header em {
 	font-size: 2.75em;
 	width: 120%;
 	margin-left: -2.5em;
+}
+.main.list {
+	float: none;
+	width: 100%;
 }
 .list {
 	float: left;
@@ -279,15 +429,19 @@ header {
 	width: 170%;
 	margin-left: -2.5em;
 }
+.main.list {
+	float: none;
+	width: 100%:
+}
 .list {
 	float: left;
-	width: 60%;
+	width: 65%;
 	margin: 0 0 3em;
-	margin-left: -5em;
+	margin-left: -6.5em;
 }
 .list + .list {
 	float: right;
-	margin-right: -5em;
+	margin-right: -6.5em;
 	margin-left: 0;
 }
 }
