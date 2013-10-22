@@ -65,6 +65,9 @@ hr {
 .clr {
 	clear: both;
 }
+.center {
+	text-align: center;
+}
 
 /*** header ***/
 header {	
@@ -149,6 +152,18 @@ header em {
 	border-right-width: 1px;
 	border-radius: 3px 0 0 3px;
 }
+.full {
+	float: none;
+	width: 100%;
+	border-radius: 3px;
+	border-right-width: 3px;
+	margin: 2em 0;
+}
+.full span {
+	position: relative;
+	top: 1px;
+	left: 2px;
+}
 .btn + .btn {
 	border-right-width: 3px;
 	border-left-width: 1px;
@@ -156,6 +171,11 @@ header em {
 }
 .btn:hover {
 	background: #8C2B01;
+}
+.nav:active, .btn:active {
+	background: #8C2B01;
+	border-color: #8C2B01;
+	color: rgba(255,255,255,0.75);
 }
 
 
@@ -172,16 +192,33 @@ header em {
 .list {
 	padding: 2em;
 	border: 3px solid #ddd;
+	position: relative;
 }
-/*.list:hover {
-	background: rgba(0,0,0,0.075);
-}*/
+.list small {
+	/*content: "Sample List";*/
+	font-size: .7em;
+	color: #253435;
+	font-weight: 700;
+	display: block;
+	width: 100%;
+	margin: 0 0 1em;
+	opacity: .7;
+}
+.right span {
+	margin-left: 8px;
+}
+.list:hover {
+	background: rgba(255,255,0,0.15);
+}
+.right {
+	float: right;
+}
 .list + .list {
 	margin: -3px 0 3em;
 }
 .list h2 {
 	margin: 0 0 .5em;
-	color: #253435;
+	color: #ff4c00;
 }
 .list ul {
 	margin: 0;
