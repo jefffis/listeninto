@@ -70,7 +70,9 @@ hr {
 	text-align: center;
 }
 small.clr {
-	margin: 0 0 3em;
+	margin: 0 0 2em;
+	position: relative;
+	top: -1.5em;
 }
 
 /*** header ***/
@@ -102,6 +104,13 @@ header h2 {
 	height: 100%;
 	vertical-align: middle;
 	background: rgba(0,0,0,0.5);
+}
+header small {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	color: white;
+	opacity: .5;
 }
 .i header h2 {
 	background: none;
@@ -389,6 +398,12 @@ h1 strong {
 	position: relative;
 	top: -2px;
 }
+.list .hide a {
+	float: none;
+	position: static;
+	padding: 0;
+	font-weight: 700;
+}
 .btn {
 	font-size: 1.25em;
 }
@@ -404,7 +419,7 @@ h1 strong {
 .list {
 	float: left;
 	width: 65%;
-	margin: 0 0 3em;
+	margin: 0;
 	margin-left: -6em;
 }
 .list + .list {

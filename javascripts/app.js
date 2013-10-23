@@ -1,7 +1,13 @@
+var messages = ["are <strong>The Black Keys</strong>", "is <strong>Miley Cyrus</strong>", "is <strong>50 Cent</strong>", "are <strong>Ween</strong>", "are <strong>Lez Zeppelin</strong>"];
+function getMessage() {
+   return messages[Math.floor(Math.random() * messages.length)];
+}
+var $band = $('#band');
 var $linky = $('#list').find('.linky');
 
-
 $(function(){
+
+	$band.html(getMessage());
 
 	$linky.on('click',function(){
 		var $this = $(this);
