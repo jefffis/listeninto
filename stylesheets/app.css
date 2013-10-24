@@ -48,6 +48,9 @@ strong {
 .r {
 	color: #ff4c00;
 }
+.r:active {
+	opacity: .6;
+}
 
 p {
 	font-size: 110%;
@@ -371,6 +374,10 @@ h1 strong {
 	font-size: 75%;
 	color: #253435;
 	opacity: .65;
+}
+
+.i header h2 a:active {
+	opacity: .6;
 }
 
 @media screen and (min-width:45em){
