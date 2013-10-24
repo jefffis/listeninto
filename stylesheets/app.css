@@ -461,6 +461,31 @@ header {
 }
 }
 
+@media print {
+	* {
+		font: normal 100%/1.5 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+		color: #040407 !important;
+	}
+	body {
+		page-break-before: always;
+	}
+	@page {
+		margin: 1cm .5cm;
+	}
+	header, .add, .right, .linky {
+		display: none !important;
+	}
+	.hide {
+		height: auto !important;
+	}
+	.list {
+		border: 0 !important;
+	}
+	.list h2 {
+		font-size: 30pt !important;
+	}
+}
+
 
 
 
