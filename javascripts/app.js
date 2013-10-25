@@ -4,6 +4,10 @@ function getMessage() {
 }
 var $band = $('#band');
 var $linky = $('#list').find('.linky');
+var $settings = $('#settings');
+var $edit_settings = $('#edit-settings');
+var $back = $('.back');
+var $cls = $('#cls');
 
 $(function(){
 
@@ -21,6 +25,26 @@ $(function(){
 			$this_detail.addClass('show');
 		}
 		return false;
+	});
+
+	$settings.on('click',function(){
+		var $this = $(this);
+		if($edit_settings.hasClass('o')){
+			$edit_settings.removeClass('o');
+			$this.removeClass('active');
+			$back.removeClass('b');
+		}else{
+			$edit_settings.addClass('o');
+			$this.addClass('active');
+			$back.addClass('b');
+		}
+		return false;
+	});
+
+	$cls.on('click', function(){
+		$edit_settings.removeClass('o');
+		$settings.removeClass('active');
+		$back.removeClass('b');
 	});
 
 });
