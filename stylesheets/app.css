@@ -382,10 +382,13 @@ h1 strong {
 	height: 0;
 	overflow: hidden;
 }
+.hide ol {
+	padding: 1em 0;
+}
 .show {
 	height: auto;
 }
-.hide p {
+.hide p, .hide li {
 	font-size: 75%;
 	color: #253435;
 	opacity: .65;
