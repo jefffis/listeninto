@@ -371,7 +371,13 @@ h1 strong {
 	margin: 0;
 }
 .i .list small span {
-	font-size: 125%;
+	font-size: 1.75em;
+}
+small span {
+	padding-left: 10px;
+}
+small span:active {
+	opacity: .5;
 }
 .i small a {
 	text-decoration: none;
@@ -403,25 +409,33 @@ h1 strong {
 }
 
 .settings {
-	position: absolute;
+	position: relative;
 	top: 0;
 	right: 0;
 	width: 100%;
-	padding: 1.5em;
-	border: 3px solid #ddd;
+	padding: 0 1.5em 1.5em;
+	/*border: 3px solid #ddd;*/
 	z-index: 1;
+	display: none;
 }
 .settings.o {
 	z-index: 3;
 	background: white;
+	display: block;
 }
 .settings h3 {
 	margin: 0 0 .5em;
 }
-.settings span {
+.settings a {
 	display: block;
 	text-align: center;
-	margin: 1.5em 0 0
+	margin: .75em 0 0;
+	text-decoration: none;
+	color: #333;
+	font-size: 1.5em;
+}
+.settings a:active {
+	opacity: .5;
 }
 .i fieldset {
 	margin: 0;
@@ -500,18 +514,18 @@ h1 strong {
 	margin-right: -6em;
 	margin-left: 0;
 }
-.settings {
-	max-width: 300px;
+/*.settings {
+	max-width: 400px;
 	right: 0;
 	top: -3px;
-	/*-webkit-transition: all .2s ease-out;
+	-webkit-transition: all .2s ease-out;
 	-moz-transition: all .2s ease-out;
-	transition: all .2s ease-out;*/
+	transition: all .2s ease-out;
 }
 .settings.o {
-	right: -300px;
+	right: -400px;
 	z-index: 1;
-}
+}*/
 }
 
 @media screen and (min-width:65em){

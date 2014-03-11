@@ -33,12 +33,13 @@ $(function(){
 			$edit_settings.removeClass('o');
 			$this.removeClass('active');
 			$back.removeClass('b');
+			return false;
 		}else{
 			$edit_settings.addClass('o');
 			$this.addClass('active');
 			$back.addClass('b');
 		}
-		return false;
+		//return false;
 	});
 
 	$cls.on('click', function(){
