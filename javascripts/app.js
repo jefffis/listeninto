@@ -11,7 +11,7 @@ var $cls = $('#cls');
 
 $(function(){
 
-	$band.html(getMessage());
+	//$band.html(getMessage());
 
 	$linky.on('click',function(){
 		var $this = $(this);
