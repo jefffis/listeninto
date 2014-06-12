@@ -41,6 +41,11 @@ h1, h2, h3, h4, h5 {
 	line-height: 1.2;
 }
 
+h3 {
+	font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+	text-transform: uppercase;
+}
+
 img {
 	display: block;
 }
@@ -93,6 +98,9 @@ header {
 	position: relative;
 	height: 20em;
 }
+.sunset {
+	background-image: url(../images/sunset-rubdown-c.jpg);
+}
 .i header {
 	background: none;
 	display: block;
@@ -108,15 +116,15 @@ header h2 {
 	display: table-cell;
 	width: 100%;
 	height: 100%;
-	vertical-align: middle;
-	background: rgba(0,0,0,0.5);
+	vertical-align: bottom;
+	background: rgba(0,0,0,0.75);
 }
 header small {
 	position: absolute;
 	bottom: 1em;
 	right: 1em;
 	color: white;
-	opacity: .5;
+	opacity: .75;
 }
 .i header h2 {
 	background: none;
@@ -132,8 +140,13 @@ header small {
 	opacity: 1;
 }
 header h2 span {
-	position: relative;
-	left: 4px;
+	font-size: .6em;
+	color: white;
+	display: block;
+	padding: 0 1em 1em;
+}
+header h2 span strong {
+	color: #ff4c00;
 }
 header a, header a:focus {
 	text-decoration: none;
@@ -141,12 +154,18 @@ header a, header a:focus {
 	outline: none;
 }
 header h2 a {
-	color: #ff4c00;
-	display: block;
+	color: white;
+	display: none;
 	-webkit-transform: rotate(-4deg);
 	-moz-transform: rotate(-4deg);
 	transform: rotate(-4deg);
 	text-shadow: -1px 4px 0 rgba(0,0,0,0.25);
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	font-size: .5em;
+	font-weight: normal;
+	opacity: .5;
 }
 .i header h2 a {
 	text-shadow: none;
@@ -463,6 +482,16 @@ small span:active {
 .i header h2 a {
 	padding: 1em 0 .25em;
 }
+header h2 {
+	vertical-align: middle;
+}
+header h2 a {
+	display: block;
+}
+header h2 span {
+	padding: 0 2em;
+	font-size: .75em;
+}
 .i, .i body {
 	width: 100%;
 	height: 100%;
@@ -527,6 +556,10 @@ small span:active {
 	right: -400px;
 	z-index: 1;
 }*/
+.left {
+	top: auto;
+	bottom: 2em;
+}
 }
 
 @media screen and (min-width:65em){
@@ -559,6 +592,12 @@ header {
 	margin-right: -6.5em;
 	margin-left: 0;
 }
+}
+
+@media screen and (min-width:60em) and (min-height:40em){
+	header {
+		height: 35em;
+	}
 }
 
 @media print {
