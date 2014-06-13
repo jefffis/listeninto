@@ -136,6 +136,10 @@ header span a:hover {
 header span a:focus {
 	outline: 2px dotted #ff4c00;
 }
+header span a:active {
+	position: relative;
+	top: 2px;
+}
 .logo {
 	color: white;
 	opacity: .5;
