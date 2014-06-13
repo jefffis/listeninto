@@ -119,15 +119,23 @@ header h2 span {
 	display: block;
 	padding: 0 1em 1.5em;
 }
-header h2 span strong {
-	color: #ff4c00;
+header span a {
+	display: inline-block;
+	line-height: 1;
+	border-bottom: 3px solid #ff4c00;
 }
 header a, header a:focus {
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 2px 1px rgba(0,0,0,0.1);
 	outline: none;
 }
-header h2 a {
+header span a:hover {
+	border: 0;
+}
+header span a:focus {
+	outline: 2px dotted #ff4c00;
+}
+.logo {
 	color: rgba(255,255,255,0.5);
 	display: none;
 	-webkit-transform: rotate(-4deg);
@@ -353,7 +361,7 @@ nav a:active {
 	header {
 		height: 30em;
 	}
-	header h2 a {
+	.logo {
 		display: block;
 	}
 	.main {
