@@ -41,7 +41,6 @@ h1, h2, h3, h4, h5 {
 
 h3 {
 	font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-	text-transform: uppercase;
 	color: rgba(0,0,0,0.5);
 }
 h4 {
@@ -86,7 +85,7 @@ header {
 	height: 100%;
 	overflow: hidden;
 	position: relative;
-	height: 20em;
+	height: 21em;
 }
 
 /*********
@@ -104,7 +103,7 @@ header h2 {
 	width: 100%;
 	height: 100%;
 	vertical-align: bottom;
-	background: rgba(0,0,0,0.75);
+	/*background: rgba(0,0,0,0.75);*/
 }
 header small {
 	position: absolute;
@@ -117,12 +116,10 @@ header h2 span {
 	font-size: .6em;
 	color: white;
 	display: block;
-	padding: 0 1em 1.5em;
+	padding: 1em 1em 1.5em;
 }
 header span a {
 	display: inline-block;
-	line-height: 1;
-	border-bottom: 3px solid #ff4c00;
 }
 header a, header a:focus {
 	text-decoration: none;
@@ -136,12 +133,13 @@ header span a:focus {
 	outline: 2px dotted #ff4c00;
 }
 .logo {
-	color: rgba(255,255,255,0.5);
+	color: white;
+	opacity: .5;
 	display: none;
 	-webkit-transform: rotate(-4deg);
 	-moz-transform: rotate(-4deg);
 	transform: rotate(-4deg);
-	text-shadow: -1px 4px 0 rgba(0,0,0,0.25);
+	text-shadow: -1px 2px 0 rgba(0,0,0,0.25);
 	position: absolute;
 	top: 1em;
 	right: 1em;
@@ -149,25 +147,26 @@ header span a:focus {
 	font-weight: normal;
 }
 
-.nav {
-	display: inline-block;
+header nav {
 	position: absolute;
+	left: 1.75em;
+	top: 1.75em;
+}
+header nav a {
+	display: inline-block;
 	padding: .35em .75em;
 	color: white;
 	font-size: .75em;
-	top: 1.75em;
-	right: 1.75em;
 	border-radius: 3px;
 	border: 2px solid #ff4c00;
 }
-.left {
-	right: auto;
-	left: 1.75em;
+header nav a + a {
+	margin-left: .75em;
 }
-.nav:hover, .nav:focus {
+header nav a:hover, header nav a:focus {
 	background: #ff4c00;
 }
-.nav:active {
+header nav a:active {
 	background: #8C2B01;
 	border-color: #8C2B01;
 	color: rgba(255,255,255,0.75);
@@ -175,10 +174,9 @@ header span a:focus {
 
 header em {
 	font-style: normal;
-	color: rgba(255,255,255,0.35);
 	position: relative;
-	top: 8px;
-	left: -6px;
+	top: 6px;
+	left: -4px;
 	font-size: 50%;
 }
 
@@ -280,7 +278,7 @@ bands
 nav {
 	text-align: center;
 }
-nav:before {
+.main nav:before {
 	content: "\2026";
 	display: block;
 	padding-bottom: 2em;
@@ -289,7 +287,7 @@ nav:before {
 	color: rgba(0,0,0,0.25);
 	font-size: 2em;
 }
-nav a {
+.main nav a {
 	display: inline-block;
 	border: 2px solid rgba(0,0,0,0.15);
 	border-radius: 4px;
@@ -299,11 +297,11 @@ nav a {
 	text-decoration: none;
 	color: rgba(0,0,0,0.3);
 }
-nav a:hover, nav a:focus {
+.main nav a:hover, .main nav a:focus {
 	border-color: rgba(0,0,0,0.25);
 	color: rgba(0,0,0,0.5);
 }
-nav a:active {
+.main nav a:active {
 	background: #efefef;
 }
 
@@ -312,6 +310,10 @@ nav a:active {
 }
 
 @media screen and (min-width:45em){
+
+	h3 {
+		text-transform: uppercase;
+	}
 
 	p {
 		font-size: 110%;
@@ -323,6 +325,10 @@ nav a:active {
 	header h2 span {
 		padding: 0 2em;
 		font-size: .75em;
+	}
+	header span a {
+		line-height: 1;
+		border-bottom: 3px solid #ff4c00;
 	}
 	.main, .main.list {
 		padding: 3em 0 2em;
@@ -348,10 +354,12 @@ nav a:active {
 		display: inline;
 	}
 
-	.nav {
-		font-size: 1em;
+	header nav {
 		top: auto;
 		bottom: 1.75em;
+	}
+	header nav a {
+		font-size: 1em;
 	}
 
 }
