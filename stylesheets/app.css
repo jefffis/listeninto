@@ -55,6 +55,10 @@ p, li {
 	color: rgba(0,0,0,0.5);
 }
 
+.c {
+	text-align: center;
+}
+
 img {
 	display: block;
 }
@@ -212,6 +216,9 @@ bands
 .t {
 	margin-top: 2em;
 }
+.l {
+	margin-bottom: 4em;
+}
 .t:before {
 	content: "\2193";
 	display: block;
@@ -323,7 +330,7 @@ nav {
 	letter-spacing: -1px;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 2px 1px rgba(0,0,0,0.1);
 	border: 2px solid rgba(0,0,0,0.15);
-	border-radius: 3px;
+	border-radius: 5px;
 	color: white;
 }
 .btn:hover, .btn:focus {
