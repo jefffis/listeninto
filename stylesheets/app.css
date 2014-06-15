@@ -299,7 +299,7 @@ nav {
 	color: rgba(0,0,0,0.25);
 	font-size: 2em;
 }
-.main nav a {
+.main nav a, .show-more {
 	display: inline-block;
 	border: 2px solid rgba(0,0,0,0.15);
 	border-radius: 4px;
@@ -309,16 +309,53 @@ nav {
 	text-decoration: none;
 	color: rgba(0,0,0,0.3);
 }
-.main nav a:hover, .main nav a:focus {
+.main nav a:hover, .main nav a:focus, .show-more:hover, .show-more:focus {
 	border-color: rgba(0,0,0,0.25);
 	color: rgba(0,0,0,0.5);
 }
-.main nav a:active {
+.main nav a:active, .show-more:active, .show-more.active {
 	background: #efefef;
 }
-
-.history, .extras, .d {
+.show-more {
+	cursor: pointer;
+	text-align: center;
+	margin: .5em 0 0;
+	padding: .35em 1em .8em;
+	position: relative;
+	font-size: 2em;
+	line-height: 0;
+	background: white;
+	z-index: 2;
+}
+.show-more.active {
+	margin-bottom: 1em;
+}
+/*.show-more:after {
+	content: " \2026";
+}*/
+/*.show-more:before, .show-more:after {
+	content: "";
 	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 45%;
+	left: -100%;
+	width: 100%;
+	max-width: 100px;
+	height: 3px;
+	background: rgba(0,0,0,0.05);
+}
+.show-more:after {
+	left: auto;
+	right: -100%;
+}*/
+
+.more, .d {
+	display: none;
+}
+.more.show {
+	display: block;
+	padding-bottom: 2em;
 }
 
 .btn {
@@ -345,6 +382,20 @@ nav {
 	background: #8C2B01;
 	border-color: #8C2B01;
 	color: rgba(255,255,255,0.75);
+}
+.history, .extras {
+	opacity: .75;
+}
+.history p, .extras p,
+.history li, .extras li {
+	font-size: .85em;
+}
+.history ul, .history ol,
+.extras ul, .extras ol {
+	padding-left: 1.25em;
+}
+.more .history + .extras {
+	padding-top: 1.5em;
 }
 
 @media screen and (min-width:45em){
@@ -426,21 +477,18 @@ nav {
 	.interesting {
 		position: relative;
 	}
+	.show-more {
+		display: none;
+	}
+	.more {
+		display: block;
+	}
 	.history, .extras {
 		position: absolute;
 		left: -15em;
 		top: 0;
 		max-width: 11em;
-		opacity: .75;
 		display: block;
-	}
-	.history p, .extras p,
-	.history li, .extras li {
-		font-size: .85em;
-	}
-	.history ul, .history ol,
-	.extras ul, .extras ol {
-		padding-left: 1.25em;
 	}
 	.extras {
 		left: auto;
