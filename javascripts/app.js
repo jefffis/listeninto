@@ -16,7 +16,7 @@ $(function(){
 
 	$show_more.on('click', function(){
 		var $this = $(this);
-		var $this_more = $this.next('.more');
+		var $this_more = $this.parent().next('.more');
 		if($this_more.hasClass('show')){
 			$this.removeClass('active');
 			$this_more.removeClass('show');
@@ -24,7 +24,7 @@ $(function(){
 			$this.addClass('active');
 			$this_more.addClass('show');
 			$('html,body').animate({
-				scrollTop: $this_more.offset().top - 100
+				scrollTop: $this.offset().top - 30
 			}, 500)
 		}
 	});
