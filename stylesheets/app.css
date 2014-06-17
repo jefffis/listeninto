@@ -138,8 +138,8 @@ header span a:focus {
 	outline: 2px dotted #ff4c00;
 }
 header span a:active {
-	position: relative;
-	top: 2px;
+	color: rgba(255, 76, 0, 0.75);
+	border-color: rgba(255, 76, 0, 0.75);
 }
 .logo {
 	color: white;
@@ -362,6 +362,7 @@ nav {
 .more.show {
 	display: block;
 	padding-bottom: 2em;
+	padding-top: 1em;
 }
 
 .btn {
@@ -443,6 +444,9 @@ nav {
 	.band li span {
 		font-size: .75em;
 	}
+	.band a {
+		font-size: .6em;
+	}
 
 	.d {
 		display: inline;
@@ -498,6 +502,9 @@ nav {
 		top: 0;
 		max-width: 11em;
 		display: block;
+	}
+	.more .history + .extras {
+		padding-top: 0;
 	}
 	.extras {
 		left: auto;
