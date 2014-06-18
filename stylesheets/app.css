@@ -31,17 +31,15 @@ body {
 }
 h1, h2, h3, h4, h5 {
 	font-weight: normal;
-	/*font-family: 'Rum Raisin', sans-serif;
-	font-family: 'Aclonica', sans-serif;
-	font-family: 'Carter One', cursive;*/
-	font-family: 'Carter One', cursive;
+	font-family: 'Carter One', sans-serif;
 	line-height: 1.2;
 	margin-top: 0;
 }
 
 h3 {
-	font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 1.5em;
 	color: rgba(0,0,0,0.5);
+	line-height: 1.4;
 }
 h4 {
 	font: normal 100%/1.5 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
@@ -429,9 +427,9 @@ nav {
 
 @media screen and (min-width:45em){
 
-	h3 {
+	/*h3 {
 		text-transform: uppercase;
-	}
+	}*/
 
 	p {
 		font-size: 110%;
@@ -526,7 +524,7 @@ nav {
 	}
 	.band .lp {
 		max-width: 600px;
-		top: -41em;
+		top: -37.5em;
 		left: 5em;
 	}
 
