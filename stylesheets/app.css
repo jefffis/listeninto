@@ -79,6 +79,13 @@ hr {
 	clear: both;
 }
 
+li + li {
+	margin-top: .5em;
+}
+ol {
+	padding-bottom: .5em;
+}
+
 /*** header ***/
 header {	
 	text-align: center;
@@ -253,6 +260,7 @@ bands
 	max-width: 100%;
 	top: -20em;
 	margin-bottom: -20em;
+	display: none;
 }
 .band h1 {
 	margin: 0 0 .5em;
@@ -407,8 +415,8 @@ nav {
 .history, .extras {
 	opacity: .75;
 }
-.history p, .extras p,
-.history li, .extras li {
+.more .history p, .more .extras p,
+.more .history li, .more .extras li {
 	font-size: .85em;
 }
 .history ul, .history ol,
@@ -417,18 +425,6 @@ nav {
 }
 .more .history + .extras {
 	padding-top: 1.5em;
-}
-
-@media screen and (min-width:35em){
-
-	.band .lp {
-		z-index: 1;
-		box-shadow: none;
-		max-width: 100%;
-		top: -26em;
-		margin-bottom: -25em;
-	}
-
 }
 
 @media screen and (min-width:45em){
@@ -470,7 +466,8 @@ nav {
 		top: -41em;
 		left: 2em;
 		margin-left: 0;
-		margin-bottom: -38em;
+		margin-bottom: -37em;
+		display: block;
 	}
 	.band li {
 		font-size: 1.5em;
