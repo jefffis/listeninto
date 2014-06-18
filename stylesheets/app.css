@@ -227,6 +227,9 @@ bands
 	padding-top: 1em;
 	position: relative;
 }
+.no-t {
+	padding-top: 0;
+}
 .t {
 	margin-top: 2em;
 }
@@ -574,6 +577,12 @@ nav {
 @media screen and (min-width:60em) and (min-height:50em){
 	header {
 		height: 35em;
+	}
+}
+
+@media screen and (min-width:60em) and (min-height:60em){
+	header {
+		height: 40em;
 	}
 }
 

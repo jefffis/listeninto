@@ -29,6 +29,25 @@ $(function(){
 		}
 	});
 
+	if($(window).width()>770){
+		$('img.lp').each(function(){
+			var $this = $(this);
+			var $this_src = $this.data('src');
+			//alert($this_src);
+			$(this).attr('src',$this_src);	
+		});
+	}
+	$(window).resize(function(){
+		if($(window).width()>770){
+			$('img.lp').each(function(){
+				var $this = $(this);
+				var $this_src = $this.data('src');
+				//alert($this_src);
+				$(this).attr('src',$this_src);	
+			});
+		}
+	});
+
 });
 
 
