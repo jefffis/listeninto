@@ -68,6 +68,10 @@ strong {
 	font-family: 700;
 }
 
+.c {
+	text-align: center;
+}
+
 hr {
 	border: 0;
 	background: #ddd;
@@ -516,6 +520,10 @@ nav {
 		font-size: 3.5em;
 		width: 170%;
 		margin-left: -2.5em;
+	}
+	.c h1 {
+		margin-left: 0;
+		width: 100%;
 	}
 	.band h1 {
 		margin-left: 0;
