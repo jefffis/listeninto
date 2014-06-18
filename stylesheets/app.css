@@ -220,6 +220,7 @@ bands
 *********/
 .band {
 	padding-top: 1em;
+	position: relative;
 }
 .t {
 	margin-top: 2em;
@@ -238,11 +239,20 @@ bands
 .band img {
 	/*padding: .5em;
 	background: #efefef;
-	box-shadow: 0 0 0 2px rgba(0,0,0,0.25);*/
-	box-shadow: 0 0 3px rgba(0,0,0,0.25), 0 0 6px rgba(0,0,0,0.2);
-	border-radius: 5px;
+	box-shadow: 0 0 0 2px rgba(0,0,0,0.1);*/
+	box-shadow: 0 0 2px rgba(0,0,0,0.25), 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 2px;
 	max-width: 100%;
 	margin-bottom: 1.75em;
+	position: relative;
+	z-index: 2;
+}
+.band .lp {
+	z-index: 1;
+	box-shadow: none;
+	max-width: 100%;
+	top: -20em;
+	margin-bottom: -20em;
 }
 .band h1 {
 	margin: 0 0 .5em;
@@ -409,6 +419,18 @@ nav {
 	padding-top: 1.5em;
 }
 
+@media screen and (min-width:35em){
+
+	.band .lp {
+		z-index: 1;
+		box-shadow: none;
+		max-width: 100%;
+		top: -26em;
+		margin-bottom: -25em;
+	}
+
+}
+
 @media screen and (min-width:45em){
 
 	h3 {
@@ -442,6 +464,13 @@ nav {
 	.band img {
 		max-width: 600px;
 		margin-left: -50px;
+	}
+	.band .lp {
+		max-width: 580px;
+		top: -41em;
+		left: 2em;
+		margin-left: 0;
+		margin-bottom: -38em;
 	}
 	.band li {
 		font-size: 1.5em;
@@ -498,6 +527,11 @@ nav {
 		font-size: 1em;
 		top: 0;
 	}
+	.band .lp {
+		max-width: 600px;
+		top: -41em;
+		left: 5em;
+	}
 
 	.interesting {
 		position: relative;
@@ -514,6 +548,7 @@ nav {
 		top: 0;
 		max-width: 11em;
 		display: block;
+		z-index: 2;
 	}
 	.more .history + .extras {
 		padding-top: 0;
