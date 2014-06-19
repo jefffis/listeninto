@@ -29,7 +29,7 @@ $(function(){
 		}
 	});
 
-	if($(window).width()>770){
+	if($(window).width()>700){
 		$('img.lp').each(function(){
 			var $this = $(this);
 			var $this_src = $this.data('src');
@@ -38,7 +38,8 @@ $(function(){
 		});
 	}
 	$(window).resize(function(){
-		if($(window).width()>770){
+		if($(window).width()>700){
+			console.log($(window).width());
 			$('img.lp').each(function(){
 				var $this = $(this);
 				var $this_src = $this.data('src');
