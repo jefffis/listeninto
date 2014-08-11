@@ -1,268 +1,54 @@
-<!doctype html>
-<html lang="en-us" class="home">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<title dir="ltr">What is Sunset Rubdown listenin&rsquo; to? via Listenin&rsquo;to</title>
-		<meta name="description" content="" />
-		
-		<link rel="shortcut icon" type="image/x-icon" href="" />
-		<link rel="author" href="" />
+---
+layout: default
+---
+{% for post in site.categories.live limit:1 %}
+	<header role="banner" class="{{page.band_css}}">
 
-		<!--<link href='http://fonts.googleapis.com/css?family=Rum+Raisin|Aclonica|Carter+One|Passion+One' rel='stylesheet' type='text/css' />-->
-		<link rel="stylesheet" href="stylesheets/app.css" />
+      <h2>
+        
+        <a href="/" class="logo">Listenin&rsquo;<em>to</em></a>
+        
+        <span>
+        What are <a href="{{page.band_url}}" target="_blank">{{page.title}}</a> listenin&rsquo; to?
+        </span>
 
-		<link rel="canonical" href="" />
+      </h2>
 
-		<meta name="mobile-web-app-capable" content="yes" />
+      <nav>
+        <a href="#">Bands</a>
+        <a href="#">WTF?!?</a>
+      </nav>
 
-		<!--<link rel="apple-touch-icon-precomposed" href="images/icon.png" />
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />-->
+      <small>
+      {{page.photo_details}}
+      </small>
 
-		<script>document.addEventListener("touchstart",function(){},false);</script>
+    </header>
 
-	</head>
-	<body>
-		<header role="banner" class="sunset">
-			<h2>
-				<a href="#/" class="logo">
-					Listenin&rsquo;<em>to</em>
-				</a>
-				<!-- band name -->
-				<span>
-					What is <a href="http://wolfparade.nonstuff.com/sunset-rubdown-biography/" target="_blank">Sunset Rubdown</a> listenin&rsquo; to?
-				</span>
-			</h2>
-			
-			<nav>
-				<a href="list.html">Bands</a>
-				<a href="wtf.html">WTF?!?</a>
-			</nav>
+    <div class="main" role="main">
 
-			<small>
-				Photo courtesy of jagjaguwar.com
-				<!--Led Zeppelin circa 1972-->
-			</small>
+      <h3>First, a bit of background:</h3>
+      <h1>{{page.intro}}</h1>
 
-			<!--<img src="images/led-zeppelin.jpg" />-->
-		</header>
-		<div class="main" role="main">
+      <div class="interesting">
+        
+        {{page.bio}}
 
-			<h3>First, a bit of background:</h3>
-			<h1>A Canadian <strong>art rock music</strong> group from Montreal.</h1>
+        <aside class="history">
+          <h2>Discography</h2>
+          <ol>
+            <li></li>
+          </ol>
+        </aside>
 
-			<div class="interesting">
-				<p>Sunset Rubdown is one of my all time favorite bands. Always reinventing their sound, but never disappointing and straying from their roots. Great at home, great in concert; their unqiue sound won me over the first time I heard <strong>Snake&rsquo;s Got a Leg III</strong>.</p>
-				<p>They were created by, and are, powered by the seemingly limitless Spencer Krug, also known for his role in Wolf Parade <em>(amongst others)</em>. Formed in 2005, their most recent release, <strong>Dragonslayer</strong>, in 2009 met with critical acclaim.</p>
-				<p>The band&rsquo;s sound is <strong>highlighted by distinct drum, keyboard, and guitar signatures</strong>; their live shows are almost unrivaled.</p>
-				<p>Besides Krug, it features Jordan Robson-Cramer on drums, guitar and keys, Michael Doerksen on guitar and bass, and Camilla Wynne Ingr on keys, percussion and vocals.</p>
+        <aside class="extras">
+          <h2>Fun facts</h2>
+          <p>{{page.fun_fact}}</p>
+        </aside>
 
-				<aside class="history">
-					<h2>Discography</h2>
-					<ol>
-						<li>Shut Up, I Am Dreaming</li>
-						<li>Random Spirit Lover</li>
-						<li>Dragonslayer</li>
-					</ol>
-				</aside>
+        <hr />
 
-				<aside class="extras">
-					<h2>Fun facts</h2>
-					<p>{add_fun_fact}</p>
-				</aside>
+      </div>
 
-				<hr />
-
-			</div>
-
-			<div class="listenin-to">
-				<h3>Groovy; but what are you <strong>listenin&rsquo; to</strong>?!?</h3>
-
-				<!-- band -->
-				<div class="interesting pad">
-					
-					<div class="band t">
-						<h1>Band: <strong>Oblivians</strong></h1>
-						<img src="images/albums/oblivians.jpg" alt="{cover art}" />
-						<img data-src="images/lp.jpg" class="lp" />
-						<ul>
-							<li>
-								This is a longer song name yaknow?
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-							<li>
-								{song}
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-							<li>
-								{song}
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-						</ul>
-						<hr />
-						<span class="show-more m">...</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-					</div>
-
-					
-					<div class="more">
-
-						<aside class="history">
-							<h2>{this band content}</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-						</aside>
-
-						<aside class="extras">
-							<h2>{extra content}</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-						</aside>
-
-					</div>
-
-				</div>
-				<!--/ band -->
-
-				<!-- band -->
-				<div class="interesting pad">
-					
-					<div class="band t">
-						<h1>Band: <strong>Oblivians</strong></h1>
-						<img src="images/albums/oblivians.jpg" alt="{cover art}" />
-						<img data-src="images/lp.jpg" class="lp" />
-						<ul>
-							<li>
-								This is a longer song name yaknow?
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-							<li>
-								{song}
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-							<li>
-								{song}
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-						</ul>
-						<hr />
-						<span class="show-more m">...</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-					</div>
-					
-					<div class="more">
-
-						<aside class="history">
-							<h2>{this band content}</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-						</aside>
-
-						<aside class="extras">
-							<h2>{extra content}</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-						</aside>
-
-					</div>
-
-				</div>
-				<!--/ band -->
-
-				<!-- band -->
-				<div class="interesting pad l cf">
-					
-					<div class="band t">
-						<h1>Band: <strong>Oblivians</strong></h1>
-						<img src="images/albums/oblivians.jpg" alt="{cover art}" />
-						<img data-src="images/lp.jpg" class="lp" />
-						<ul>
-							<li>
-								This is a longer song name yaknow?
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-							<li>
-								{song}
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-							<li>
-								{song}
-								<span>
-									{reason why we dig this song}
-								</span>
-								<a href="#">on Spotify</a>
-							</li>
-						</ul>
-						<hr />
-						<span class="show-more m">...</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-					</div>
-					
-					<div class="more">
-
-						<aside class="history">
-							<h2>{this band content}</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-						</aside>
-
-						<aside class="extras">
-							<h2>{extra content}</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-						</aside>
-
-					</div>
-
-				</div>
-				<!--/ band -->
-
-				<a href="#" class="btn">View playlist on Spotify</a>
-				<p class="c">or <a href="">save a playlist.txt file</a></p>
-
-			</div>
-
-			<footer>
-				<nav>
-					<span class="d">
-						<a href="#">Current</a>
-					</span>
-					<span>
-						<a href="list.html">Bands</a>
-					</span>
-					<span class="d">
-						<a href="mailto:howdy@listeninto.us">Suggest<span class="d"> a Band</span></a>
-					</span>
-					<span>
-						<a href="wtf.html">WTF?!?</a>
-					</span>
-				</nav>
-				<h4>&copy; 2014 jefff.co</h4>
-			</footer>
-
-		</div>
-		<script src="javascripts/jquery.js"></script>
-		<script src="javascripts/app.js"></script>
-	</body>
-</html>
+    </div>
+{% endfor %}
