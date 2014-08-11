@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+		<header role="banner">
+			<h2>
+				<a href="index.html" class="logo">
+					Listenin&rsquo;<em>to</em>
+				</a>
+				<!-- band name -->
+				<span>
+					See what <strong>previous bands</strong> are listenin&rsquo; to.
+				</span>
+			</h2>
+			
+			<nav>
+				<a href="index.html">Current</a>
+				<a href="wtf.html">WTF?!?</a>
+			</nav>
+
+		</header>
+		<div class="main c" role="main">
+
+			<h1>Past <strong>Listenin&rsquo;to</strong> sessions:</h1>
+
+			<div class="interesting band no-t">
+				<ul>
+					{% for post in site.categories.live %}
+					<li>
+						{{post.title}}
+						<span>
+							from {{ post.date | date: "%B %d, %Y" }}
+						</span>
+						<a href="{{post.url}}">See what they&rsquo;re digging</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<footer>
+				<nav>
+					<span>
+						<a href="index.html">Current</a>
+					</span>
+					<span class="d">
+						<a href="mailto:howdy@listeninto.us">Suggest<span class="d"> a Band</span></a>
+					</span>
+				</nav>
+				<h4>&copy; 2014 jefff.co</h4>
+			</footer>
+
+		</div>

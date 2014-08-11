@@ -2,25 +2,54 @@
 layout: default
 ---
 
-			<h3>First, a bit of background:</h3>
-			<h1>{{page.intro}}</h1>
+			<header role="banner" class="{{page.band_css}}">
 
-			<div class="interesting">
-				
-				{{page.bio}}
+		      <h2>
+		        
+		        <a href="/" class="logo">Listenin&rsquo;<em>to</em></a>
+		        
+		        <span>
+		        What are <a href="{{page.band_url}}" target="_blank">{{page.title}}</a> listenin&rsquo; to?
+		        </span>
 
-				<aside class="history">
-					<h2>Discography</h2>
-					<ol>
-						<li></li>
-					</ol>
-				</aside>
+		      </h2>
 
-				<aside class="extras">
-					<h2>Fun facts</h2>
-					<p>{{page.fun_fact}}</p>
-				</aside>
+		      <nav>
+		        <a href="/bands.html">Bands</a>
+		        <a href="/wtf.html">WTF?!?</a>
+		      </nav>
 
-				<hr />
+		      <small>
+		      {{page.photo_details}}
+		      </small>
 
-			</div>
+		      <div class="cover"></div>
+
+		    </header>
+
+		    <div class="main" role="main">
+
+		      <h3>First, a bit of background:</h3>
+		      <h1>{{page.intro}}</h1>
+
+		      <div class="interesting">
+		        
+		        {{page.content}}
+
+		        <aside class="history">
+		          <h2>Discography</h2>
+		          {% for post in site.categories.wm %}
+		            {{post.content}}
+		          {% endfor %}
+		        </aside>
+
+		        <aside class="extras">
+		          <h2>Fun facts</h2>
+		          <p>{{page.fun_fact}}</p>
+		        </aside>
+
+		        <hr />
+
+		      </div>
+
+		    </div>

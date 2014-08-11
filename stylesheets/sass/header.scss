@@ -1,0 +1,131 @@
+// header
+header {	
+	text-align: center;
+	background: #253435;
+	background-size: cover;
+	display: table;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 21em;
+}
+header * {
+	position: relative;
+	z-index: 2;
+}
+header iframe {
+	width: 100%;
+	height: 21em;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	opacity: .5;
+}
+
+
+//band backgrounds
+.white-mystery {
+	background-image: url(/images/white-mystery.jpg);
+}
+
+header h2 {
+	font-size: 4em;
+	letter-spacing: -1px;
+	margin: 0;
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: bottom;
+	/*background: rgba(0,0,0,0.75);*/
+}
+header small {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	color: white;
+	opacity: .75;
+}
+header h2 span {
+	font-size: .6em;
+	color: white;
+	display: block;
+	padding: 1em 1em 1.5em;
+}
+header span a {
+	display: inline-block;
+}
+header a, header a:focus {
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 2px 1px rgba(0,0,0,0.1);
+	outline: none;
+}
+header span a:hover {
+	border: 0;
+}
+header span a:focus {
+	outline: 2px dotted #ff4c00;
+}
+header span a:active {
+	color: rgba(255, 76, 0, 0.75);
+	border-color: rgba(255, 76, 0, 0.75);
+}
+.logo {
+	color: white;
+	opacity: .5;
+	display: none;
+	-webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+	text-shadow: -1px 2px 0 rgba(0,0,0,0.25);
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	font-size: .4em;
+	font-weight: normal;
+}
+
+header nav {
+	position: absolute;
+	left: 0;
+	top: 1.25em;
+	width: 100%;
+	padding: 0 1.25em;
+}
+header nav a {
+	display: inline-block;
+	padding: .5em .75em;
+	color: white;
+	font-size: .85em;
+	border-radius: 3px;
+	border: 2px solid #ff4c00;
+	float: left;
+}
+header nav a + a {
+	float: right;
+}
+header nav a:hover, header nav a:focus {
+	background: #ff4c00;
+}
+header nav a:active {
+	background: #8C2B01;
+	border-color: #8C2B01;
+	color: rgba(255,255,255,0.75);
+}
+.cover {
+	position: absolute;
+	z-index: 1;
+	background: rgba(37,52,53,0.75);
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 21em;
+}
+
+header em {
+	font-style: normal;
+	position: relative;
+	top: 6px;
+	left: -4px;
+	font-size: 50%;
+}

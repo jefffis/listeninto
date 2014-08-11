@@ -1,0 +1,7 @@
+---
+layout: disc
+categories: wm
+---
+
+1. album
+2. album
