@@ -1691,9 +1691,6 @@ header nav a {
   font-size: .85em;
   border-radius: 3px;
   border: 2px solid #ff4c00;
-  float: left; }
-
-header nav a + a {
   float: right; }
 
 header nav a:hover, header nav a:focus {
@@ -1824,6 +1821,9 @@ nav {
   color: rgba(0, 0, 0, 0.25);
   font-size: 2em; }
 
+footer.main nav:before {
+  margin-top: 0; }
+
 .main nav a, .show-more {
   display: inline-block;
   border: 2px solid rgba(0, 0, 0, 0.15);
@@ -1871,6 +1871,9 @@ nav {
   max-width: 32.5em;
   margin: 0 auto;
   padding: 2em; }
+
+footer.main {
+  padding-top: 0; }
 
 .btn {
   background: #ff4c00;

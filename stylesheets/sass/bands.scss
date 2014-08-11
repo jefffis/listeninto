@@ -103,6 +103,9 @@ nav {
 	color: rgba(0,0,0,0.25);
 	font-size: 2em;
 }
+footer.main nav:before {
+	margin-top: 0;
+}
 .main nav a, .show-more {
 	display: inline-block;
 	border: 2px solid rgba(0,0,0,0.15);
@@ -152,4 +155,7 @@ nav {
 	max-width: 32.5em;
 	margin: 0 auto;
 	padding: 2em;
+}
+footer.main {
+	padding-top: 0;
 }

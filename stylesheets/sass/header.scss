@@ -99,11 +99,11 @@ header nav a {
 	font-size: .85em;
 	border-radius: 3px;
 	border: 2px solid #ff4c00;
-	float: left;
-}
-header nav a + a {
 	float: right;
 }
+//header nav a + a {
+//	float: right;
+//}
 header nav a:hover, header nav a:focus {
 	background: #ff4c00;
 }
