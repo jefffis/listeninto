@@ -408,6 +408,9 @@ bands
   margin-bottom: -20em;
   display: none; }
 
+.band.lg {
+  font-size: 1.35em; }
+
 .band h1 {
   margin: 0 0 .5em; }
 
@@ -450,6 +453,10 @@ bands
   border-radius: 3px;
   display: inline-block;
   /*float: right;*/ }
+
+.band.lg a {
+  font-size: .9em;
+  padding: .5em .35em; }
 
 .band a:hover, .band a:focus {
   border-color: rgba(0, 0, 0, 0.25); }

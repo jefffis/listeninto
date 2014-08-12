@@ -22,7 +22,7 @@ layout: default
 
 			<h1>Past <strong>Listenin&rsquo;to</strong> sessions:</h1>
 
-			<div class="interesting band no-t">
+			<div class="interesting band lg no-t">
 				<ul>
 					{% for post in site.categories.live %}
 					<li>
@@ -30,7 +30,7 @@ layout: default
 						<span>
 							from {{ post.date | date: "%B %d, %Y" }}
 						</span>
-						<a href="{{post.url}}">See what they&rsquo;re digging</a>
+						<a href="{{post.url}}">What&rsquo;re they digging</a>
 					</li>
 					{% endfor %}
 				</ul>
