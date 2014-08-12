@@ -76,6 +76,9 @@ header span a:active {
 	top: 0;
 	right: 0;
 }
+.logo:active {
+	opacity: .3;
+}
 footer .logo {
 	position: static;
 	display: block;

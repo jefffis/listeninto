@@ -1,11 +1,23 @@
 <!doctype html>
-<html lang="en-us" class="{% if page.url == '/index.html' %}{% endif %}">
+<html lang="en-us">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title dir="ltr">What are {{ page.title }} listenin&rsquo; to?</title>
+    <title dir="ltr">
+      {% if page.path contains '_posts' %}
+      What are {{page.title}} listenin&rsquo; to?
+      {% else %}
+      {% if page.url == '/bands.html' %}
+      See what real bands are listenin&rsquo; to.
+      {% endif %}
+      {% if page.url == '/wtf.html' %}
+      Just WTF is Listenin&rsquo; to?
+      {% endif %}
+      What are bands REALLY listenin&rsquo; to?
+      {% endif %}
+    </title>
     <meta name="description" content="{{page.bio}}" />
 
     <!-- filament group loadCSS for ajax CSS loading -->
@@ -41,7 +53,7 @@
         {% endif %}
         {% if page.url != '/bands.html' %}
         <span>
-          <a href="/bands.html">Bands</a>
+          <a href="/bands.html">All bands</a>
         </span>
         {% endif %}
         {% if page.url != '/wtf.html' %}
