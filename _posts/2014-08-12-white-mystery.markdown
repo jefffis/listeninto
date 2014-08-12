@@ -8,6 +8,7 @@ photo_details: #whitemystery
 intro: 'White Mystery is brother-sister rock &rsquo;n&rsquo; roll duo <a href="http://en.wikipedia.org/wiki/Miss_Alex_White">Miss Alex White</a> &amp; <a href="http://www.whitemysteryband.com/2014/02/25/francis-scott-key-white-biography/">Francis Scott Key White</a> from Chicago.'
 fun_fact: The best, or sexiest, way to learn a new word each day. Learn a new word each day. curated & hand-picked goodness emailed to your inbox daily.
 categories: live
+albums: '<li>album</li><li>album</li><li>album</li><li>DUBBLE DRAGON</li>'
 ---
 
 The siblings tour worldwide, earn rave reviews from MTV, VICE, Sound Opinions, Pitchfork &ndash; and currently represent the Levi&rsquo;s #equipped campaign. Their fourth full-length DUBBLE DRAGON is available on double vinyl and iTunes now.

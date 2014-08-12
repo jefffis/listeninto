@@ -7,7 +7,9 @@ layout: default
 
       <h2>
         
-        <a href="/" class="logo">Listenin&rsquo;<em>to</em></a>
+        <a href="/" class="logo">
+          <img src="/images/logo-w.svg" />
+        </a>
         
         <span>
         What are <a href="{{post.band_url}}" target="_blank">{{post.title}}</a> listenin&rsquo; to?
@@ -39,9 +41,7 @@ layout: default
 
         <aside class="history">
           <h2>Discography</h2>
-          {% for post in site.categories.wm %}
-            {{post.content}}
-          {% endfor %}
+          <ol>{{post.albums}}</ol>
         </aside>
 
         <aside class="extras">

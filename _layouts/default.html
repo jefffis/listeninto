@@ -35,7 +35,7 @@
     <footer class="main" id="menu">
       <nav>
         {% if page.url != '/index.html' %}
-        <span>
+        <span{% if page.path contains '_posts' %} class="d"{% endif %}>
           <a href="/">Current</a>
         </span>
         {% endif %}
@@ -53,6 +53,9 @@
           <a href="mailto:howdy@listeninto.us">Suggest<span class="d"> a Band</span></a>
         </span>
       </nav>
+
+      <img src="/images/logo.svg" class="logo" />
+
       <h4>&copy; 2014 jefff.co</h4>
     </footer>
 
