@@ -11,7 +11,7 @@ layout: default
 		        </a>
 		        
 		        <span>
-		        What are <a href="{{page.band_url}}" target="_blank">{{page.title}}</a> listenin&rsquo; to?
+		        What {{page.title_prefix}} <a href="{{page.band_url}}" target="_blank">{{page.title}}</a> listenin&rsquo; to?
 		        </span>
 
 		      </h2>
@@ -44,8 +44,8 @@ layout: default
 		        </aside>
 
 		        <aside class="extras">
-		          <h2>Fun facts</h2>
-		          <p>{{page.fun_fact}}</p>
+		          <h2>{{page.fun_fact_title}}</h2>
+		          {{page.fun_fact}}
 		        </aside>
 
 		        <hr />

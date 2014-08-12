@@ -7,7 +7,7 @@
     
     <title dir="ltr">
       {% if page.path contains '_posts' %}
-      What are {{page.title}} listenin&rsquo; to?
+      What {{page.title_prefix}} {{page.title}} listenin&rsquo; to?
       {% else %}
       {% if page.url == '/bands.html' %}
       See what real bands are listenin&rsquo; to.
@@ -66,7 +66,7 @@
         </span>
       </nav>
 
-      <img src="/images/logo.svg" class="logo" />
+      <a href="/"><img src="/images/logo.svg" class="logo" /></a>
 
       <h4>&copy; 2014 jefff.co</h4>
     </footer>

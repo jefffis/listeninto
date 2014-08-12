@@ -1,9 +1,38 @@
 ---
-layout: default
+layout: index
 ---
 
 {% for post in site.categories.live limit:1 %}
-	<header role="banner" class="{{post.band_css}}">
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title dir="ltr">What {{post.title_prefix}} {{post.title}} listenin&rsquo; to?</title>
+    <meta name="description" content="{{page.bio}}" />
+
+    <!-- filament group loadCSS for ajax CSS loading -->
+    <script>
+      function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
+      loadCSS('/stylesheets/lt.min.css');
+    </script>
+
+    <noscript>
+      <link rel="stylesheet" media="screen" href="/stylesheets/lt.min.css" />
+    </noscript>    
+
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <script>
+      document.addEventListener("touchstart", function() {},false);
+    </script>
+
+  </head>
+  <body>
+
+	   <header role="banner" class="{{post.band_css}}">
 
       <h2>
         
@@ -12,7 +41,7 @@ layout: default
         </a>
         
         <span>
-        What are <a href="{{post.band_url}}" target="_blank">{{post.title}}</a> listenin&rsquo; to?
+        What {{post.title_prefix}} <a href="{{post.band_url}}" target="_blank">{{post.title}}</a> listenin&rsquo; to?
         </span>
 
       </h2>
@@ -45,8 +74,8 @@ layout: default
         </aside>
 
         <aside class="extras">
-          <h2>Fun facts</h2>
-          <p>{{post.fun_fact}}</p>
+          <h2>{{post.fun_fact_title}}</h2>
+          {{post.fun_fact}}
         </aside>
 
         <hr />
