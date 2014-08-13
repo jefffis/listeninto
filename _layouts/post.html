@@ -29,6 +29,10 @@ layout: default
 
 		    </header>
 
+		    {% if page.band_logo %}
+		    <img src="/images/bands/{{page.band_prefix}}/logo.jpg" class="band-logo" />
+		    {% endif %}
+
 		    <div class="main" role="main">
 
 		      <h3>First, a bit of background:</h3>
