@@ -14,7 +14,7 @@ var $more = $('.more');
 
 $(function(){
 
-	$('#note > a').on('click',function(){
+	$('#note a').on('click',function(){
 		localStorage.setItem('hide-note',1);
 		$('#note').addClass('hide');
 	});
