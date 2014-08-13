@@ -273,8 +273,13 @@ header iframe {
   left: 0;
   opacity: .5; }
 
-.white-mystery {
-  background-image: url(/images/white-mystery.jpg); }
+.band-logo {
+  max-width: 75px;
+  margin: -20px auto 1em;
+  border-radius: 5px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05); }
 
 header h2 {
   font-size: 4em;
@@ -322,6 +327,8 @@ header span a:active {
   position: absolute;
   top: 0;
   right: 0; }
+  .logo.no-click:active {
+    opacity: .5; }
 
 .logo:active {
   opacity: .3; }
@@ -646,13 +653,15 @@ footer.main {
   .band.lg {
     font-size: 1.2em; }
 
+  .band-logo {
+    max-width: 100px;
+    margin-top: -51px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1); }
+
   .d {
     display: inline; }
 
   header nav {
-    top: auto;
-    bottom: 1.75em;
-    left: 1em;
     width: auto; }
 
   header nav a {

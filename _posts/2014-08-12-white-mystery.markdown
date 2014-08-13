@@ -2,8 +2,8 @@
 layout: post
 title: White Mystery
 title_prefix: is
-band_css: white-mystery
-band_img: white-mystery.jpg
+band_prefix: white-mystery
+band_logo: true
 band_url: http://www.whitemystery.com
 bio: The siblings tour worldwide, earn rave reviews from MTV, VICE, Sound Opinions, Pitchfork &ndash; and currently represent the Levi&rsquo;s #equipped campaign. Their fourth full-length DUBBLE DRAGON is available on double vinyl and iTunes now.
 photo_details: #whitemystery

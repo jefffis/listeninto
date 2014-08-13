@@ -20,11 +20,11 @@ layout: index
 
     {% include note.html %}
 
-	   <header role="banner" class="{{post.band_css}}">
+	   <header role="banner" style="background-image: url(/images/bands/{{post.band_prefix}}/hero.jpg);">
 
       <h2>
         
-        <img src="/images/logo-w.svg" class="logo" alt="Listenin&rsquo; logo" />
+        <img src="/images/branding/logo-w.svg" class="logo no-click" alt="Listenin&rsquo; logo" />
         
         <span>
         What {{post.title_prefix}} <a href="{{post.band_url}}" target="_blank">{{post.title}}</a> listenin&rsquo; to?
@@ -44,6 +44,10 @@ layout: index
       <div class="cover"></div>
 
     </header>
+
+    {% if post.band_logo %}
+    <img src="/images/bands/{{post.band_prefix}}/logo.jpg" class="band-logo" />
+    {% endif %}
 
     <div class="main" role="main">
 
@@ -69,27 +73,4 @@ layout: index
       </div>
 
     </div>
-
-    <footer class="main" id="menu">
-      <nav>
-        <span>
-          <a href="/bands.html">All bands</a>
-        </span>
-        <span>
-          <a href="/wtf.html">WTF?!?</a>
-        </span>
-        <span class="d">
-          <a href="mailto:howdy@listeninto.us">Suggest<span class="d"> a Band</span></a>
-        </span>
-      </nav>
-
-      <img src="/images/logo.svg" alt="Listenin&rsquo; logo" class="logo" />
-
-      <h4>&copy; 2014 jefff.co</h4>
-    </footer>
-
-    {% include js.html %}
-    
-  </body>
-</html>
 {% endfor %}

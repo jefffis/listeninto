@@ -25,8 +25,17 @@ header iframe {
 
 
 //band backgrounds
-.white-mystery {
-	background-image: url(/images/white-mystery.jpg);
+//.white-mystery {
+//	background-image: url(/images/white-mystery.jpg);
+//}
+
+.band-logo {
+	max-width: 75px;
+	margin: -20px auto 1em;
+	border-radius: 5px;
+	position: relative;
+	z-index: 5;
+	box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
 }
 
 header h2 {
@@ -75,6 +84,13 @@ header span a:active {
 	position: absolute;
 	top: 0;
 	right: 0;
+	&.no-click {
+
+		&:active {
+			opacity: .5;
+		}
+
+	}
 }
 .logo:active {
 	opacity: .3;

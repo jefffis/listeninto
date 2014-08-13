@@ -49,14 +49,20 @@
 		font-size: 1.2em;
 	}
 
+	.band-logo {
+		max-width: 100px;
+		margin-top: -51px;
+		box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+	}
+
 	.d {
 		display: inline;
 	}
 
 	header nav {
-		top: auto;
-		bottom: 1.75em;
-		left: 1em;
+		//top: auto;
+		//bottom: 1.75em;
+		//left: 1em;
 		width: auto;
 	}
 	header nav a {
