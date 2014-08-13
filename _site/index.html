@@ -1,4 +1,4 @@
-    
+
 <!doctype html>
 <html lang="en-us">
   <head>
@@ -9,7 +9,7 @@
     <title dir="ltr">What is White Mystery listenin&rsquo; to?</title>
     <meta name="description" content="A curated site for music fans who want to know who bands REALLY listen to." />
 
-    <!-- filament group loadCSS for ajax CSS loading -->
+        <!-- filament group loadCSS for ajax CSS loading -->
     <script>
       function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
       loadCSS('/stylesheets/lt.min.css');
@@ -25,16 +25,36 @@
       document.addEventListener("touchstart", function() {},false);
     </script>
 
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="http://listeninto.us/" />
+    <meta name="twitter:title" content="What are bands REALLY listenin&rsquo; to?" />
+    <meta name="twitter:description" content="A curated site for music fans who want to know who bands REALLY listen to." />
+    
+
+    
+    
+    <link rel="canonical" href="http://listeninto.us/" />
+    
+    
+    
+    
+
   </head>
   <body>
+
+    <div class="note hide" id="note" style="display: none;">
+  <!-- notification -->
+  <p>First time? <a href="/wtf.html">What is Listenin&rsquo;to?</a></p>
+  <a></a>
+  <!--/ notification -->
+</div>
 
 	   <header role="banner" class="white-mystery">
 
       <h2>
         
-        <a href="/" class="logo">
-          <img src="/images/logo-w.svg" />
-        </a>
+        <img src="/images/logo-w.svg" class="logo" alt="Listenin&rsquo; logo" />
         
         <span>
         What is <a href="http://www.whitemystery.com" target="_blank">White Mystery</a> listenin&rsquo; to?
@@ -83,10 +103,6 @@
 
     </div>
 
-    
-    <script>if(document.body.scrollTop<1){(function(e){var d=e.document;if(!location.hash&&e.addEventListener){window.scrollTo(0,1);var c=1,b=function(){return e.pageYOffset||d.compatMode==="CSS1Compat"&&d.documentElement.scrollTop||d.body.scrollTop||0},a=setInterval(function(){if(d.body){clearInterval(a);c=b();e.scrollTo(0,c===1?0:1)}},15);e.addEventListener("load",function(){setTimeout(function(){if(b()<20){e.scrollTo(0,c===1?0:1)}},0)})}})(this);}</script>
-    <!--<script type="text/javascript" src="/javascripts/lt.min.js" async></script>-->
-
     <footer class="main" id="menu">
       <nav>
         <span>
@@ -100,10 +116,12 @@
         </span>
       </nav>
 
-      <a href="/"><img src="/images/logo.svg" class="logo" /></a>
+      <img src="/images/logo.svg" alt="Listenin&rsquo; logo" class="logo" />
 
       <h4>&copy; 2014 jefff.co</h4>
     </footer>
 
+    <script src="/javascripts/lt.min.js" async></script>
+    
   </body>
 </html>

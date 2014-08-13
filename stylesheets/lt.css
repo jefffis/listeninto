@@ -197,6 +197,9 @@ img {
 a {
   color: #ff4c00; }
 
+a:active {
+  opacity: .75; }
+
 strong {
   color: #ff4c00;
   font-family: 700; }
@@ -367,6 +370,28 @@ header em {
   top: 6px;
   left: -4px;
   font-size: 50%; }
+
+.note {
+  background: #ffffba;
+  padding: 1em;
+  position: relative; }
+  .note.hide {
+    display: none; }
+  .note p {
+    margin: 0;
+    line-height: 1.2; }
+  .note > a {
+    position: absolute;
+    right: 1em;
+    top: .75em;
+    font-size: 1.2em;
+    opacity: .5;
+    color: #040407;
+    cursor: pointer; }
+    .note > a:active {
+      opacity: .25; }
+    .note > a:after {
+      content: "\2717"; }
 
 /*********
 bands
@@ -558,7 +583,8 @@ footer.main {
 .nav:active, .btn:active {
   background: #8C2B01;
   border-color: #8C2B01;
-  color: rgba(255, 255, 255, 0.75); }
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 1; }
 
 .history, .extras {
   opacity: .75; }
@@ -616,6 +642,9 @@ footer.main {
 
   .band a {
     font-size: .6em; }
+
+  .band.lg {
+    font-size: 1.2em; }
 
   .d {
     display: inline; }

@@ -55,6 +55,9 @@ img {
 a {
 	color: #ff4c00;
 }
+a:active {
+	opacity: .75;
+}
 strong {
 	color: #ff4c00;
 	font-family: 700;

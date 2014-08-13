@@ -14,6 +14,15 @@ var $more = $('.more');
 
 $(function(){
 
+	$('#note > a').on('click',function(){
+		localStorage.setItem('hide-note',1);
+		$('#note').addClass('hide');
+	});
+
+	if(localStorage.getItem('hide-note')!=1){
+		$('#note').removeClass('hide').show();
+	}
+
 	$show_more.on('click', function(){
 		var $this = $(this);
 		var $this_more = $this.parent().next('.more');
@@ -52,4 +61,3 @@ $(function(){
 });
 
 (function(e){var d=e.document;if(!location.hash&&e.addEventListener){window.scrollTo(0,1);var c=1,b=function(){return e.pageYOffset||d.compatMode==="CSS1Compat"&&d.documentElement.scrollTop||d.body.scrollTop||0},a=setInterval(function(){if(d.body){clearInterval(a);c=b();e.scrollTo(0,c===1?0:1)}},15);e.addEventListener("load",function(){setTimeout(function(){if(b()<20){e.scrollTo(0,c===1?0:1)}},0)})}})(this);
-

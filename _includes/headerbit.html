@@ -1,0 +1,42 @@
+    <!-- filament group loadCSS for ajax CSS loading -->
+    <script>
+      function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
+      loadCSS('/stylesheets/lt.min.css');
+    </script>
+
+    <noscript>
+      <link rel="stylesheet" media="screen" href="/stylesheets/lt.min.css" />
+    </noscript>    
+
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <script>
+      document.addEventListener("touchstart", function() {},false);
+    </script>
+
+    {% if page.path contains '_posts' %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="http://listeninto.us/{{page.url}}" />
+    <meta name="twitter:title" content="What {{page.title_prefix}} {{page.title}} listenin&rsquo; to?" />
+    <meta name="twitter:description" content="{{page.bio}}" />
+    <meta name="twitter:image" content="http://listeninto.us/images/{{page.band_img}}" />
+    {% else %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="http://listeninto.us/" />
+    <meta name="twitter:title" content="What are bands REALLY listenin&rsquo; to?" />
+    <meta name="twitter:description" content="A curated site for music fans who want to know who bands REALLY listen to." />
+    {% endif %}
+
+    {% if page.path contains '_posts' %}
+    <link rel="canonical" href="http://listeninto.us{{page.url}}" />
+    {% else %}
+    {% if page.url == '/index.html' %}
+    <link rel="canonical" href="http://listeninto.us/" />
+    {% endif %}
+    {% if page.url == '/bands.html' %}
+    <link rel="canonical" href="http://listeninto.us/bands.html" />
+    {% endif %}
+    {% if page.url == '/wtf.html' %}
+    <link rel="canonical" href="http://listeninto.us/wtf.html" />
+    {% endif %}
+    {% endif %}

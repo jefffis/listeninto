@@ -129,3 +129,58 @@ header em {
 	left: -4px;
 	font-size: 50%;
 }
+
+// notifications
+.note {
+
+	background: #ffffba;
+	padding: 1em;
+	//text-align: center;
+	position: relative;
+
+	&.hide {
+
+		display: none;
+
+	}
+
+	//img {
+	//	display: inline-block;
+	//	margin: 0 -.25em;
+	//	vertical-align: middle;
+	//	max-width: 100px;
+	//	opacity: .5;
+	//}
+
+	p {
+
+		margin: 0;
+		line-height: 1.2;
+
+	}
+
+	& > a {
+
+		position: absolute;
+		right: 1em;
+		top: .75em;
+		font-size: 1.2em;
+		opacity: .5;
+		color: rgb(4,4,7);
+		cursor: pointer;
+
+		&:active {
+
+			opacity: .25;
+
+		}
+
+		&:after {
+
+			content: "\2717";
+
+		}
+
+	}
+
+}
