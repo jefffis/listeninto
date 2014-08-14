@@ -325,8 +325,8 @@ header span a:active {
 .logo {
   opacity: .5;
   position: absolute;
-  top: 0;
-  right: 0; }
+  top: .1em;
+  right: .1em; }
   .logo.no-click:active {
     opacity: .5; }
 
