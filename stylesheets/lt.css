@@ -176,7 +176,8 @@ h1, h2, h3, h4, h5 {
 h3 {
   font-size: 1.5em;
   color: rgba(0, 0, 0, 0.5);
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; }
 
 h4 {
   font: normal 100%/1.5 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
@@ -610,6 +611,9 @@ footer.main {
 @media screen and (min-width: 45em) {
   p {
     font-size: 110%; }
+
+  h3 {
+    text-align: center; }
 
   header h2 {
     vertical-align: middle; }
