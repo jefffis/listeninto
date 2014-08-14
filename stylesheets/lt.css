@@ -258,7 +258,7 @@ header {
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: 24em; }
+  height: 25em; }
 
 header * {
   position: relative;
@@ -274,8 +274,8 @@ header iframe {
   opacity: .5; }
 
 .band-logo {
-  max-width: 75px;
-  margin: -20px auto 1em;
+  max-width: 60px;
+  margin: -31px auto 1em;
   border-radius: 5px;
   position: relative;
   z-index: 5;
@@ -302,7 +302,7 @@ header h2 span {
   font-size: .6em;
   color: white;
   display: block;
-  padding: 1em; }
+  padding: 1em 1em 1.5em; }
 
 header span a {
   display: inline-block; }
@@ -369,7 +369,7 @@ header nav a:active {
   width: 100%;
   top: 0;
   left: 0;
-  height: 24em; }
+  height: 25em; }
 
 header em {
   font-style: normal;
