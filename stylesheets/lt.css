@@ -275,7 +275,7 @@ header iframe {
 
 .band-logo {
   max-width: 60px;
-  margin: -31px auto 1em;
+  margin: -31px auto 31px;
   border-radius: 5px;
   position: relative;
   z-index: 5;
@@ -655,7 +655,8 @@ footer.main {
 
   .band-logo {
     max-width: 100px;
-    margin-top: -51px; }
+    margin-top: -51px;
+    margin-bottom: 50px; }
 
   .d {
     display: inline; }
