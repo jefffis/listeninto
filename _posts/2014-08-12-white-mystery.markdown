@@ -17,7 +17,7 @@ playlist_desc: 'This is a collection of ten songs that unite glitter and gusto. 
 albums: '<li>White Mystery</li><li>Blood &amp; Venom</li><li>TELEPATHIC</li><li>DUBBLE DRAGON</li>'
 ---
 
-Formed on April 20th, 2008; White Mystery have been melting ears ever since. They draw their inspiration from visual art, being on the road often (& presumably seeing weird shit), collective daydreaming, and some of the bands below. But why the name White Mystery? As Alex herself describes it: &ldquo;Because we&rsquo;re sweet and mysterious, like the Airheads candy.&rdquo;
+If you&rsquo;re a fan of stripped down garage rock, loud drums, and/or redheads, **meet your perfect match**. Formed on April 20th, 2008; White Mystery have been melting ears ever since. They draw their inspiration from visual art, being on the road often (& presumably seeing weird shit), collective daydreaming, and some of the bands below. But why the name White Mystery? As Alex herself describes it: &ldquo;Because we&rsquo;re sweet and mysterious, like the Airheads candy.&rdquo;
 
 She also likens their music to a Chicago-style hot dog; because &ldquo;the magic is between the buns.&rdquo; Some of her musical influences are **The MC5, Marc Bolan of T.Rex, Tina Turner, and Poison Ivy of the Cramps**.
 
