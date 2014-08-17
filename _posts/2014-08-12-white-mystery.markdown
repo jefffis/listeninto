@@ -11,6 +11,9 @@ intro: 'White Mystery is brother-sister rock &rsquo;n&rsquo; roll duo <a href="h
 fun_fact_title: 'Fun fact'
 fun_fact: '<p>The siblings first formed their own band, Baby Blues when they were small children; armed with a toy piano & a plastic saxophone.</p>'
 categories: live
+band_category: wmband
+playlist_title: WAM BAM THANK YOU GLAM
+playlist_desc: 'This is a collection of ten songs that unite glitter and gusto. Starting with the vintage originals, like T. Rex and Sweet, to modern day rock &rsquo;n&rsquo; roll aliens, like Sam Flax and the Dandy Warhols, this playlist include tracks for White Mystery&rsquo;s performance opening the David Bowie exhibit on Tuesday, September 23, 2014 at the Museum of Contemporary Art.'
 albums: '<li>White Mystery</li><li>Blood &amp; Venom</li><li>TELEPATHIC</li><li>DUBBLE DRAGON</li>'
 ---
 
