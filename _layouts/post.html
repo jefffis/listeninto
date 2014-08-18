@@ -54,6 +54,13 @@ layout: default
 
 		      </div>
 
+		      {% if page.playlist_desc %}
+		      <h1 class="center-text">{{page.playlist_title}}</h1>
+		      <p>{{page.playlist_desc}}</p>
+		      {% else %}
+		      <h3>Groovy; but what are you <strong>listenin&rsquo; to</strong>?!?</h3>
+		      {% endif %}
+
 		      {% include subband.html %}
 
 		    </div>
