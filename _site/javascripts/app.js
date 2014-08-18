@@ -7,7 +7,7 @@ var $linky = $('#list').find('.linky');
 var $settings = $('#settings');
 var $edit_settings = $('#edit-settings');
 var $back = $('.back');
-var $cls = $('#cls');*/
+var $cls = $('#cls');
 
 var $show_more = $('.show-more');
 var $more = $('.more');
@@ -66,6 +66,25 @@ $(function(){
 		}
 	});
 
+});
+
+function setNote(n,v,e){
+	localStorage.setItem('hide-note',1);
+	e.classList.add('hide');
+}
+function showNote(n,v,e){
+	if(localStorage.getItem(n)!=v){
+		e.classList.remove('hide').style.display = 'block';
+	}
+}*/
+
+echo.init({
+	offset: 100,
+	throttle: 250,
+	unload: false,
+	callback: function (element, op) {
+		console.log(element, 'has been', op + 'ed')
+	}
 });
 
 (function(e){var d=e.document;if(!location.hash&&e.addEventListener){window.scrollTo(0,1);var c=1,b=function(){return e.pageYOffset||d.compatMode==="CSS1Compat"&&d.documentElement.scrollTop||d.body.scrollTop||0},a=setInterval(function(){if(d.body){clearInterval(a);c=b();e.scrollTo(0,c===1?0:1)}},15);e.addEventListener("load",function(){setTimeout(function(){if(b()<20){e.scrollTo(0,c===1?0:1)}},0)})}})(this);

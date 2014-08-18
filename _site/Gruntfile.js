@@ -18,7 +18,7 @@ module.exports= function(grunt){
 					'report': false
 				},
 				'files': [{
-					'src': ['javascripts/jquery.js','javascripts/app.js'],
+					'src': ['javascripts/echo.js','javascripts/app.js'],
 					'dest': 'javascripts/<%= pkg.file_name %>.min.js'
 				}]
 			}
