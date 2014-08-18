@@ -23,8 +23,8 @@
 	}
 	.main h1 {
 		font-size: 3em;
-		/*width: 120%;
-		margin-left: -2.5em;*/
+		///width: 120%;
+		//margin-left: -2.5em;
 	}
 
 	.band img {
@@ -40,13 +40,15 @@
 		display: block;
 	}
 	.band li {
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 	.band li span {
 		font-size: .75em;
 	}
 	.band a {
-		font-size: .6em;
+		//font-size: .6em;
+		//float: none;
+		//margin-top: -.2em;
 	}
 	.band.lg {
 		font-size: 1.2em;
@@ -95,6 +97,10 @@
 		font-size: 3.5em;
 		width: 170%;
 		margin-left: -2.5em;
+		&.center-text {
+			width: 100%;
+			margin-left: 0;
+		}
 	}
 	.c h1 {
 		margin-left: 0;

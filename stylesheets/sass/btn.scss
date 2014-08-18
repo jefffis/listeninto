@@ -13,6 +13,9 @@
 	border: 2px solid rgba(0,0,0,0.15);
 	border-radius: 5px;
 	color: white;
+	&.mar-t {
+		margin-top: 2em;
+	}
 }
 .btn:hover, .btn:focus {
 	background: #8C2B01;

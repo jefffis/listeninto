@@ -73,63 +73,13 @@ layout: index
       </div>
 
       {% if post.playlist_desc %}
-      <h2>{{post.playlist_title}}</h2>
+      <h1 class="center-text">{{post.playlist_title}}</h1>
       <p>{{post.playlist_desc}}</p>
       {% else %}
       <h3>Groovy; but what are you <strong>listenin&rsquo; to</strong>?!?</h3>
       {% endif %}
 
-      {% for b in site.categories.wmband %}
-        {% for a in b.artists %}
-        <!-- band -->
-          <div class="interesting pad">
-            
-            <div class="band t">
-              <h1>Band:
-                <strong>{{a.name}}</strong>
-                {% for s in a.songs %}
-                  {{s.song}}
-                {% endfor %}
-              </h1>
-              <!--<img src="images/albums/oblivians.jpg" alt="{cover art}" />
-              <img data-src="images/lp.jpg" class="lp" />
-              <ul>
-
-              {% for s in a.songs %}
-                <li>{{s.song}}</li>
-              {% endfor %}
-                
-                  
-                  <span>
-                    {reason why we dig this song}
-                  </span>
-                  <a href="#">on Spotify</a>
-                
-              </ul>
-              <hr />-->
-              <!--<span class="show-more m">...</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>-->
-            </div>
-
-            
-            <!--<div class="more">
-
-              <aside class="history">
-                <h2>{this band content}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-              </aside>
-
-              <aside class="extras">
-                <h2>{extra content}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-              </aside>
-
-            </div>-->
-
-          </div>
-          <!--/ band -->
-        {% endfor %}
-      {% endfor %}
+      {% include subband.html %}
 
     </div>
 {% endfor %}

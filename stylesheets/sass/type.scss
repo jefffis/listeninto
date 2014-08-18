@@ -92,6 +92,10 @@ h1 strong {
 	letter-spacing: -2px;
 	margin-top: .5em;
 	margin-bottom: 1.2em;
+	&.center-text {
+		text-align: left;
+		margin-top: 1em;
+	}
 }
 
 small span {
@@ -99,4 +103,10 @@ small span {
 }
 small span:active {
 	opacity: .5;
+}
+
+.center-text {
+	text-align: center;
+	max-width: 100%;
+	margin-left: 0;
 }

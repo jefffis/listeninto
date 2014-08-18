@@ -38,6 +38,14 @@ $(function(){
 		}
 	});
 
+	$('img').each(function(){
+		var $this = $(this);
+		var this_src = $this.data('src');
+		if(this_src!=undefined){
+			$this.attr('src',this_src);
+		}
+	});
+
 	if($(window).width()>700){
 		$('img.lp').each(function(){
 			var $this = $(this);

@@ -229,12 +229,20 @@ h1 strong {
   letter-spacing: -2px;
   margin-top: .5em;
   margin-bottom: 1.2em; }
+  .main h1.center-text {
+    text-align: left;
+    margin-top: 1em; }
 
 small span {
   padding-left: 10px; }
 
 small span:active {
   opacity: .5; }
+
+.center-text {
+  text-align: center;
+  max-width: 100%;
+  margin-left: 0; }
 
 @font-face {
   font-family: 'Carter One';
@@ -460,10 +468,9 @@ bands
   font-weight: bold; }
 
 .band li + li {
-  margin-top: 1.5em; }
+  margin-top: 1.25em; }
 
 .band li:before {
-  content: "\266B";
   content: "\226B";
   position: absolute;
   left: -1em;
@@ -479,16 +486,20 @@ bands
   padding-top: .25em; }
 
 .band a {
-  font-size: .85em;
   font-weight: normal;
   text-decoration: none;
   border: 2px solid rgba(0, 0, 0, 0.1);
   padding: .5em;
-  margin-top: 1em;
+  margin-left: .5em;
   line-height: 1;
   border-radius: 3px;
-  display: inline-block;
-  /*float: right;*/ }
+  display: inline-block; }
+  .band a.i {
+    border: 0;
+    display: inline;
+    padding: 0; }
+    .band a.i:active {
+      opacity: .75; }
 
 .band.lg a {
   font-size: .9em;
@@ -584,6 +595,8 @@ footer.main {
   border: 2px solid rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   color: white; }
+  .btn.mar-t {
+    margin-top: 2em; }
 
 .btn:hover, .btn:focus {
   background: #8C2B01; }
@@ -629,9 +642,7 @@ footer.main {
     padding: 3em 0 2em; }
 
   .main h1 {
-    font-size: 3em;
-    /*width: 120%;
-    margin-left: -2.5em;*/ }
+    font-size: 3em; }
 
   .band img {
     max-width: 600px;
@@ -646,13 +657,10 @@ footer.main {
     display: block; }
 
   .band li {
-    font-size: 1.5em; }
+    font-size: 1.2em; }
 
   .band li span {
     font-size: .75em; }
-
-  .band a {
-    font-size: .6em; }
 
   .band.lg {
     font-size: 1.2em; }
@@ -689,6 +697,9 @@ footer.main {
     font-size: 3.5em;
     width: 170%;
     margin-left: -2.5em; }
+    .main h1.center-text {
+      width: 100%;
+      margin-left: 0; }
 
   .c h1 {
     margin-left: 0;
