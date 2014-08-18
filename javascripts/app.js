@@ -38,13 +38,13 @@ $(function(){
 		}
 	});
 
-	$('img').each(function(){
-		var $this = $(this);
-		var this_src = $this.data('src');
-		if(this_src!=undefined){
+	setTimeout(function(){
+		$('img.ll').each(function(){
+			var $this = $(this);
+			var this_src = $this.data('src');
 			$this.attr('src',this_src);
-		}
-	});
+		});
+	}, 1000);
 
 	if($(window).width()>700){
 		$('img.lp').each(function(){

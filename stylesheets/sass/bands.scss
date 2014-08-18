@@ -141,6 +141,13 @@ footer.main nav:before {
 	margin-right: .5em;
 	text-decoration: none;
 	color: rgba(0,0,0,0.3);
+	&.top {
+
+		border: 0;
+		padding: .8em .5em;
+		margin-top: .75em;
+
+	}
 }
 .main nav span:last-child a {
 	margin: 0;

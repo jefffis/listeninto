@@ -538,6 +538,10 @@ footer.main nav:before {
   margin-right: .5em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3); }
+  .main nav a.top, .show-more.top {
+    border: 0;
+    padding: .8em .5em;
+    margin-top: .75em; }
 
 .main nav span:last-child a {
   margin: 0; }
@@ -682,7 +686,10 @@ footer.main {
 
   header nav a + a {
     float: none;
-    margin-left: 1em; } }
+    margin-left: 1em; }
+
+  .main nav .top {
+    margin-top: 0; } }
 @media screen and (min-width: 65em) {
   header, header iframe, .cover {
     height: 30em; }

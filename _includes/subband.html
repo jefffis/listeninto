@@ -8,7 +8,7 @@
                 <strong>{{a.name}}</strong>
               </h1>
               {% for i in a.art %}
-                <img data-src="{{i.src}}" />
+                <img data-src="{{i.src}}" class="ll" src="/images/branding/favicon-r-l.png" />
                 <noscript><img src="{{i.src}}" /></noscript>
               {% endfor %}
 
@@ -16,7 +16,7 @@
               {% for s in a.songs %} 
                 <li>
                   <!--Song: <strong>-->{{s.song}}<!--</strong>-->
-                  <a href="{{s.url}}" target="_blank">on {{b.playlist_site}}</a>
+                  <a href="{{s.url}}" target="_blank">Dig it</a>
                 </li>
               {% endfor %}
               </ul>
