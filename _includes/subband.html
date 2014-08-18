@@ -1,57 +1,64 @@
+{% if post.playlist_desc %}
+<h1 class="center-text">{{post.playlist_title}}</h1>
+<p>{{post.playlist_desc}}</p>
+{% else %}
+<h3>Groovy; but what are you <strong>listenin&rsquo; to</strong>?!?</h3>
+{% endif %}
+
 {% for b in site.categories.wmband %}
-        {% for a in b.artists %}
-        <!-- band -->
-          <div class="interesting pad">
-            
-            <div class="band t">
-              <h1>Artist:
-                <strong>{{a.name}}</strong>
-              </h1>
-              {% for i in a.art %}
-                <img data-src="{{i.src}}" />
-                <noscript><img src="{{i.src}}" /></noscript>
-              {% endfor %}
-
-              <ul>
-              {% for s in a.songs %} 
-                <li>
-                  <!--Song: <strong>-->{{s.song}}<!--</strong>-->
-                  <a href="{{s.url}}" target="_blank">on {{b.playlist_site}}</a>
-                </li>
-              {% endfor %}
-              </ul>
-                
-                  
-                  <!--<span>
-                    {reason why we dig this song}
-                  </span>
-                  <a href="#">on Spotify</a>
-                
-              </ul>
-              <hr />-->
-              <!--<span class="show-more m">...</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>-->
-            </div>
-
-            
-            <!--<div class="more">
-
-              <aside class="history">
-                <h2>{this band content}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-              </aside>
-
-              <aside class="extras">
-                <h2>{extra content}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
-              </aside>
-
-            </div>-->
-
-          </div>
-          <!--/ band -->
-        {% endfor %}
-
-        <a href="{{b.playlist}}" class="btn mar-t">View playlist on {{b.playlist_site}}</a>
-
+{% for a in b.artists %}
+<!-- band -->
+  <div class="interesting pad">
+    
+    <div class="band t">
+      <h1>Artist:
+        <strong>{{a.name}}</strong>
+      </h1>
+      {% for i in a.art %}
+        <img data-src="{{i.src}}" />
+        <noscript><img src="{{i.src}}" /></noscript>
       {% endfor %}
+
+      <ul>
+      {% for s in a.songs %} 
+        <li>
+          <!--Song: <strong>-->{{s.song}}<!--</strong>-->
+          <a href="{{s.url}}" target="_blank">on {{b.playlist_site}}</a>
+        </li>
+      {% endfor %}
+      </ul>
+        
+          
+          <!--<span>
+            {reason why we dig this song}
+          </span>
+          <a href="#">on Spotify</a>
+        
+      </ul>
+      <hr />-->
+      <!--<span class="show-more m">...</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>-->
+    </div>
+
+    
+    <!--<div class="more">
+
+      <aside class="history">
+        <h2>{this band content}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
+      </aside>
+
+      <aside class="extras">
+        <h2>{extra content}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aspernatur, quae excepturi voluptates.</p>
+      </aside>
+
+    </div>-->
+
+  </div>
+  <!--/ band -->
+{% endfor %}
+
+<a href="{{b.playlist}}" class="btn mar-t">View playlist on {{b.playlist_site}}</a>
+
+{% endfor %}
