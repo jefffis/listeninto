@@ -22,7 +22,14 @@ bands
 	color: rgba(0,0,0,0.25);
 	font-size: 2em;
 }
+
+.padding {
+	padding: 0 2em;
+}
+
 .band {
+
+	margin: 0 -2em;
 
 	li {
 
@@ -38,17 +45,17 @@ bands
 
 	}
 
+	h1 {
+		padding-left: 1em;
+	}
+
 }
 .band img {
-	/*padding: .5em;
-	background: #efefef;
-	box-shadow: 0 0 0 2px rgba(0,0,0,0.1);*/
-	box-shadow: 0 0 2px rgba(0,0,0,0.25), 0 0 6px rgba(0,0,0,0.2);
-	border-radius: 2px;
 	max-width: 100%;
 	margin-bottom: 1.75em;
 	position: relative;
 	z-index: 2;
+	box-shadow: 0 0 0 2px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05);
 }
 .band .lp {
 	z-index: 1;
@@ -89,13 +96,14 @@ bands
 .band li span {
 	display: block;
 	font-weight: normal;
-	opacity: .75;
-	padding-top: .25em;
-	padding-bottom: .75em;
-	line-height: 1.35;
+	//opacity: .75;
+	padding-top: .5em;
+	padding-bottom: 1em;
+	//line-height: 1.35;
+	font-size: .85em;
 }
 .band a {
-	font-size: .85em;
+	//font-size: .85em;
 	font-weight: normal;
 	text-decoration: none;
 	border: 2px solid rgba(0,0,0,0.1);
@@ -143,7 +151,7 @@ bands
 
 		& + p {
 
-			margin-top: -1em;
+			margin-top: -.5em;
 			margin-bottom: 1.5em;
 
 		}

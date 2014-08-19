@@ -4,10 +4,10 @@
           <div class="interesting pad">
             
             <div class="band t">
-              <h1>Artist:
+              <h1 class="padding">Artist:
                 <strong>{{a.name}}</strong>
               </h1>
-              <p>{{a.info}}</p>
+              <p class="padding">{{a.info}}</p>
               {% for i in a.art %}
                 <img data-echo="{{i.src}}" src="/images/branding/favicon-r-l.png" />
                 <noscript><img src="{{i.src}}" /></noscript>
@@ -15,7 +15,7 @@
 
               <ul>
               {% for s in a.songs %} 
-                <li>
+                <li class="padding">
                   <strong>{{s.song}}</strong>
                   <span>{{s.info}}</span>
                   <a href="{{s.url}}" target="_blank">Listen now</a>
