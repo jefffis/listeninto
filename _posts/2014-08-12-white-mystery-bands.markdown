@@ -5,24 +5,31 @@ playlist: http://www.youtube.com/playlist?list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX
 playlist_site: Youtube
 artists:
  - name: David Bowie
+   info: 'Bowie began in 1969; and today is still hard at work doing what he loves.'
    art:
     - src: '/images/bands/white-mystery/david-bowie.jpg'
    songs: 
     - song: Rebel Rebel
+      info: 'This was Bowie&rsquo;s last single in the glam rock style that had been his trademark.'
       url: 'https://www.youtube.com/watch?v=Sa6bI_95G9I&list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX8&index=1'
     - song: Suffragette City
+      info: 'Before recording it himself, Bowie offered it to the band Mott the Hoople if they would forgo their plan to break up; they refused.'
       url: 'https://www.youtube.com/watch?v=aSQ0LWnFx7w&list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX8&index=2'
  - name: T. Rex
+   info: 'Originally named Tyrannosaurus Rex, T. Rex heavily influenced The Who, The Smiths, David Bowie, and many others in the glam and punk rock scene.'
    art:
     - src: '/images/bands/white-mystery/trex.jpg'
    songs: 
     - song: 20th Century Boy
+      info: 'Never having been released on a studio album, and finding success years after being written; it&rsquo;s been featured in many video games and has inspired a Manga series of a similar name.'
       url: 'https://www.youtube.com/watch?v=kKTc4Nk5bsw&list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX8&index=3'
  - name: Sweet
+   info: 'Sweet were a prominent, British glam rock band in the 1970s. Re-inventing themselves in 1974 as a hard rock back, they were invited to play with The Who, but had to pass due to injury.'
    art:
     - src: '/images/bands/white-mystery/sweet.jpg'
    songs: 
     - song: Fox On The Run
+      info: 'Written by Sweet themselves, this song has been covered many times over by bands such as Scorpions, Red Hot Chili Peppers, and many more.'
       url: 'https://www.youtube.com/watch?v=wjfZG9UzK7E&list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX8&index=4'
  - name: Hello
    art:
