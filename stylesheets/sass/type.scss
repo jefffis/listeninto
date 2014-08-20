@@ -56,6 +56,9 @@ img {
 a {
 	color: #ff4c00;
 }
+a:focus {
+	outline: 2px dotted #040407;
+}
 a:active {
 	opacity: .75;
 }

@@ -1,12 +1,11 @@
 @media screen and (min-width: 32em){
-	.padding {
-		padding: 0;
+	.padding, .band h1 {
+
+		padding: 0 25px;
+
 	}
 	.band img {
 		border-radius: 2px;
-	}
-	.band h1 {
-		padding-left: 0;
 	}
 }
 @media screen and (min-width:45em){

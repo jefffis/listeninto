@@ -16,6 +16,9 @@ bands
 }
 .t:before {
 	content: "\2193";
+	//content: "";
+	//background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACVCAYAAAC6lQNMAAAAGXRFW…TS0MTS0NDE0tDE0tDE0tDQxNLQxNLQxNLQ0MTSUB3/E2AAP9bsCMlUbggAAAAASUVORK5CYII=) no-repeat top center;
+	//background-size: 50px;
 	display: block;
 	padding-bottom: 2em;
 	text-align: center;

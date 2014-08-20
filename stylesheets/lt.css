@@ -198,6 +198,9 @@ img {
 a {
   color: #ff4c00; }
 
+a:focus {
+  outline: 2px dotted #040407; }
+
 a:active {
   opacity: .75; }
 
@@ -618,11 +621,10 @@ footer.main {
     margin-top: 2em; }
 
 .btn:hover, .btn:focus {
-  background: #8C2B01; }
+  border-color: #8C2B01; }
 
 .nav:active, .btn:active {
   background: #8C2B01;
-  border-color: #8C2B01;
   color: rgba(255, 255, 255, 0.75);
   opacity: 1; }
 
@@ -641,14 +643,11 @@ footer.main {
   padding-top: 1.5em; }
 
 @media screen and (min-width: 32em) {
-  .padding {
-    padding: 0; }
+  .padding, .band h1 {
+    padding: 0 25px; }
 
   .band img {
-    border-radius: 2px; }
-
-  .band h1 {
-    padding-left: 0; } }
+    border-radius: 2px; } }
 @media screen and (min-width: 45em) {
   p {
     font-size: 110%; }
@@ -808,3 +807,5 @@ footer.main {
 
   .list h2 {
     font-size: 30pt !important; } }
+
+/*# sourceMappingURL=lt.css.map */

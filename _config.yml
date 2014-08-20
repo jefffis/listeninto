@@ -1,4 +1,5 @@
 name: Listenin'to
 markdown: redcarpet
-pygments: true
+highlighter: true
 permalink: /:title
+minify_html: false

@@ -5,7 +5,7 @@ playlist: http://www.youtube.com/playlist?list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX
 playlist_site: Youtube
 artists:
  - name: David Bowie
-   info: 'Bowie began in 1969; and today is still hard at work doing what he loves.'
+   info: 'Bowie, in many aspects, is the father of glam rock.'
    art:
     - src: '/images/bands/white-mystery/david-bowie.jpg'
    songs: 
