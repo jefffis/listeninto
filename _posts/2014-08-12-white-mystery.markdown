@@ -2,6 +2,7 @@
 layout: post
 title: White Mystery
 title_prefix: is
+band_date: 'August 21st, 2014'
 band_prefix: white-mystery
 band_logo: true
 band_url: http://www.whitemystery.com
