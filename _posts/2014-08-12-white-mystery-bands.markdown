@@ -61,7 +61,7 @@ artists:
     - song: Documentary Soundtrack
       url: 'https://www.youtube.com/watch?v=aIna2SXw1_Q&index=8&list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX8'
  - name: Andy Warhol
-   info: 'If you don&rsquo; know him; you probably know his <a href="https://www.google.com/search?q=marilyn+monroe+andy+warhol&espv=2&source=lnms&tbm=isch&sa=X&ei=8WT2U6ThLZKLyASXn4GgCQ&ved=0CAYQ_AUoAQ&biw=1920&bih=985#q=campbells+andy+warhol&tbm=isch" target="_blank">Campbells soup cans</a>, or <a href="https://www.google.com/search?q=marilyn+monroe+andy+warhol&espv=2&source=lnms&tbm=isch&sa=X&ei=8WT2U6ThLZKLyASXn4GgCQ&ved=0CAYQ_AUoAQ&biw=1920&bih=985" target="_blank">Marylin Monroe</a>.'
+   info: 'If you don&rsquo; know him; you probably know his <a href="https://www.google.com/search?q=marilyn+monroe+andy+warhol&espv=2&source=lnms&tbm=isch&sa=X&ei=8WT2U6ThLZKLyASXn4GgCQ&ved=0CAYQ_AUoAQ&biw=1920&bih=985#q=campbells+andy+warhol&tbm=isch" target="_blank">Campbell&rsquo;s soup cans</a>, or <a href="https://www.google.com/search?q=marilyn+monroe+andy+warhol&espv=2&source=lnms&tbm=isch&sa=X&ei=8WT2U6ThLZKLyASXn4GgCQ&ved=0CAYQ_AUoAQ&biw=1920&bih=985" target="_blank">Marylin Monroe</a>.'
    art:
     - src: '/images/bands/white-mystery/warhol.jpg'
    songs: 
