@@ -50,9 +50,15 @@ bands
 
 	h1 {
 		padding-left: 1em;
+
 	}
 
 }
+
+.all h1 {
+	padding-left: 0;
+}
+
 .band img {
 	max-width: 100%;
 	margin-bottom: 1.75em;
@@ -126,6 +132,9 @@ bands
 			opacity: .75;
 		}
 	}
+}
+.all a {
+	font-size: 1.1em;
 }
 .band p a, .band span a {
 	border: 0;

@@ -18,20 +18,18 @@ layout: default
 		</header>
 		<div class="main c" role="main">
 
-			<h1>All <strong>Listenin&rsquo;to</strong> sessions:</h1>
+			<h3>All <strong>Listenin&rsquo;to</strong> sessions:</h3>
 
-			<div class="interesting band lg no-t">
-				<ul>
-					{% for post in site.categories.live %}
-					<li>
-						{{post.title}}
-						<span>
+			<div class="interesting band all no-t">
+				{% for post in site.categories.live %}
+					
+						<h1>{{post.title}}</h1>
+						<p>
 							from {{ post.band_date }}
-						</span>
+						</p>
 						<a href="{{post.url}}">What&rsquo;re they digging</a>
-					</li>
+					
 					{% endfor %}
-				</ul>
 			</div>
 
 		</div>
