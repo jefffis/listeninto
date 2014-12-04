@@ -1,6 +1,17 @@
 /*********
 bands
 *********/
+
+.band-list {
+
+	& + .band-list {
+
+		margin-top: 5em;
+
+	}
+
+}
+
 .band {
 	padding-top: 1em;
 	position: relative;
@@ -80,6 +91,9 @@ bands
 .band h1 {
 	margin: 0 0 .5em;
 }
+.band .more-bot {
+	padding-bottom: .5em;
+}
 .band ul {
 	padding-left: 1.25em;
 	padding: 0;
@@ -132,6 +146,17 @@ bands
 			opacity: .75;
 		}
 	}
+}
+.band h1 a {
+
+	border: 0;
+	border-bottom: 2px solid currentColor;
+	border-radius: 0;
+	display: inline;
+	padding: 0;
+	line-height: inherit;
+	text-align: inherit;
+
 }
 .all a {
 	font-size: 1.1em;

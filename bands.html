@@ -23,13 +23,15 @@ layout: default
 			<div class="interesting band all no-t">
 				{% for post in site.categories.live %}
 					
+					<div class="band-list">
 						<h1>{{post.title}}</h1>
 						<p>
 							from {{ post.band_date }}
 						</p>
 						<a href="{{post.url}}">What&rsquo;re they digging</a>
+					</div>
 					
-					{% endfor %}
+				{% endfor %}
 			</div>
 
 		</div>
