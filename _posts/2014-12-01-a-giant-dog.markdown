@@ -6,7 +6,7 @@ band_date: 'December 1st, 2014'
 band_prefix: a-giant-dog
 band_logo: false
 band_url: http://agiantdog.com/
-bio: The siblings tour worldwide, earn rave reviews from MTV, VICE, Sound Opinions, Pitchfork &ndash; and currently represent the Levi&rsquo;s #equipped campaign. Their fourth full-length DUBBLE DRAGON is available on double vinyl and iTunes now.
+bio: A Giant Dog is a five person Delta blues & classic Country inspired rock band hailing from Austin, Texas..
 photo_details: #whitemystery
 intro: 'A Giant Dog is a five person <strong>Delta blues &amp; classic Country</strong> inspired rock band hailing from Austin, Texas.'
 fun_fact_title: 'Fun fact'
