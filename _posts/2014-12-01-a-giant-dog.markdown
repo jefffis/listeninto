@@ -8,9 +8,9 @@ band_logo: false
 band_url: http://agiantdog.com/
 bio: A Giant Dog is a five person Delta blues & classic Country inspired rock band hailing from Austin, Texas.
 photo_details: #whitemystery
-intro: 'A Giant Dog is a five person <strong>Delta blues &amp; classic Country</strong> inspired rock band hailing from Austin, Texas.'
+intro: 'A Giant Dog is a five person <strong>Delta blues inspired rock band</strong> hailing from Austin, Texas.'
 fun_fact_title: 'Fun fact'
-fun_fact: '<p>Besides also having eight side-bands going, their bass player, Graham Low, is a Civil War Re-enactor.</p>'
+fun_fact: '<p>Besides also having eight side-bands going, their bass player, Graham Low, is a Civil War re-enactor.</p>'
 categories: live
 band_category: wmband
 #playlist_title: WAM BAM THANK YOU GLAM
@@ -105,7 +105,7 @@ Made up of Andrew, Andy, Graham, Matt, and Sabrina; **A Giant Dog is a group of 
 
 **So why the name A Giant Dog**? Because Andrew takes pleasure in creating awkward situations for other people. He wanted a non-sequitur name that contained an indefinite article.
 
-But where do they gather inspiration from? <a href="http://en.wikipedia.org/wiki/Jack_White" target="_blank">Jack White</a> has been a huge influence; with Andrew citing his ability to whet their appetites for Delta Blues and Classic Country. Coincidentally, they are also inspired by washing machines, paintings, record players, the squeal of the shower pipes, impulsive behavior, cynicism, and loss.
+But where do they gather inspiration from? <a href="http://en.wikipedia.org/wiki/Jack_White" target="_blank">Jack White</a> has been a huge influence;  whetting their appettites for Delta blues and classic Country. A few other musical influences include <strong>Etta James</strong>, <strong>Randy Newman</strong>, <strong>The Beatles</strong>, <strong>Sam Cooke</strong> and <strong>Gino Washington</strong>. Coincidentally, they are also inspired by washing machines, paintings, record players, the squeal of the shower pipes, impulsive behavior, cynicism, and loss.
 
 So, what are they up to when they are not making music? In their own words: **eating meat and making love.**
 
