@@ -17,8 +17,8 @@
               <p class="padding">{{a.info}}</p>
               {% endif %}
               {% for i in a.art %}
-                <img data-echo="{{i.src}}" src="{{site.root_url}}images/branding/favicon-r-l.png" />
-                <noscript><img src="{{i.src}}" /></noscript>
+                <img data-echo="{{site.root_url}}{{i.src}}" src="{{site.root_url}}images/branding/favicon-r-l.png" />
+                <noscript><img src="{{site.root_url}}{{i.src}}" /></noscript>
               {% endfor %}
               <ul>
               {% for s in a.songs %} 
