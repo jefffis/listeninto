@@ -24,7 +24,7 @@ layout: index
 
       <h2>
         
-        <img src="/images/branding/full-logo-w.svg" class="logo no-click" alt="Listenin&rsquo; logo" />
+        <img src="{{site.root_url}}images/branding/full-logo-w.svg" class="logo no-click" alt="Listenin&rsquo; logo" />
         
         <span>
         What {{post.title_prefix}} <a href="{{post.band_url}}" target="_blank">{{post.title}}</a> listenin&rsquo; to?
@@ -34,7 +34,7 @@ layout: index
 
       <nav>
         <a href="#menu">Menu</a>
-        <!--<a href="/wtf.html">WTF?!?</a>-->
+        <!--<a href="{{site.root_url}}wtf.html">WTF?!?</a>-->
       </nav>
 
       <small>
@@ -46,7 +46,7 @@ layout: index
     </header>
 
     {% if post.band_logo %}
-    <img src="/images/bands/{{post.band_prefix}}/logo.jpg" class="band-logo" />
+    <img src="{{site.root_url}}images/bands/{{post.band_prefix}}/logo.jpg" class="band-logo" />
     {% endif %}
 
     <div class="main" role="main">

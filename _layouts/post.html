@@ -16,7 +16,7 @@ layout: default
 
 		      <nav>
 		        <a href="#menu">Menu</a>
-		        <!--<a href="/wtf.html">WTF?!?</a>-->
+		        <!--<a href="{{site.root_url}}wtf.html">WTF?!?</a>-->
 		      </nav>
 
 		      <small>
@@ -28,7 +28,7 @@ layout: default
 		    </header>
 
 		    {% if page.band_logo %}
-		    <img src="/images/bands/{{page.band_prefix}}/logo.jpg" class="band-logo" />
+		    <img src="{{site.root_url}}images/bands/{{page.band_prefix}}/logo.jpg" class="band-logo" />
 		    {% endif %}
 
 		    <div class="main" role="main">

@@ -32,23 +32,23 @@
     {{ content }}
     
     <script>if(document.body.scrollTop<1){(function(e){var d=e.document;if(!location.hash&&e.addEventListener){window.scrollTo(0,1);var c=1,b=function(){return e.pageYOffset||d.compatMode==="CSS1Compat"&&d.documentElement.scrollTop||d.body.scrollTop||0},a=setInterval(function(){if(d.body){clearInterval(a);c=b();e.scrollTo(0,c===1?0:1)}},15);e.addEventListener("load",function(){setTimeout(function(){if(b()<20){e.scrollTo(0,c===1?0:1)}},0)})}})(this);}</script>
-    <!--<script type="text/javascript" src="/javascripts/lt.min.js" async></script>-->
+    <!--<script type="text/javascript" src="{{site.root_url}}javascripts/lt.min.js" async></script>-->
 
     <footer class="main" id="menu">
       <nav>
         {% if page.url != '/index.html' %}
         <span{% if page.path contains '_posts' %} class="d"{% endif %}>
-          <a href="/">Current</a>
+          <a href="{{site.root_url}}">Current</a>
         </span>
         {% endif %}
         {% if page.url != '/bands.html' %}
         <span>
-          <a href="/bands.html">All bands</a>
+          <a href="{{site.root_url}}bands.html">All bands</a>
         </span>
         {% endif %}
         {% if page.url != '/wtf.html' %}
         <span>
-          <a href="/wtf.html">WTF?!?</a>
+          <a href="{{site.root_url}}wtf.html">WTF?!?</a>
         </span>
         {% endif %}
         <span class="d">
@@ -57,7 +57,7 @@
         <a href="#" class="top">Top</a>
       </nav>
 
-      <a href="/"><img src="/images/branding/full-logo.svg" alt="Listenin&rsquo; logo" class="logo" /></a>
+      <a href="{{site.root_url}}"><img src="{{site.root_url}}images/branding/full-logo.svg" alt="Listenin&rsquo; logo" class="logo" /></a>
 
       <h4>&copy; 2016 jefff.co</h4>
     </footer>
