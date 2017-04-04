@@ -3,3 +3,4 @@ markdown: redcarpet
 highlighter: true
 permalink: /:title
 minify_html: false
+root_url: http://wtf.jefff.co/tourrin/
