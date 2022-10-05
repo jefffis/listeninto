@@ -1,5 +1,21 @@
+## OS X
 .DS_Store
-node_modules
-node_modules/*
-_site/node_modules
-_site/node_modules/*
+
+## Jekyll
+/_site
+_site
+_site/*
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+
+# Folders
+/vendor
+bbin/
+bin/
+coverage
+gh-pages/
+pkg/
+test/dest
+tmp/*
+/node_modules/

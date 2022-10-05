@@ -38,17 +38,17 @@
       <nav>
         {% if page.url != '/index.html' %}
         <span{% if page.path contains '_posts' %} class="d"{% endif %}>
-          <a href="{{site.root_url}}">Current</a>
+          <a href="/">Current</a>
         </span>
         {% endif %}
         {% if page.url != '/bands.html' %}
         <span>
-          <a href="{{site.root_url}}bands.html">All bands</a>
+          <a href="/bands.html">All bands</a>
         </span>
         {% endif %}
         {% if page.url != '/wtf.html' %}
         <span>
-          <a href="{{site.root_url}}wtf.html">WTF?!?</a>
+          <a href="/wtf.html">WTF?!?</a>
         </span>
         {% endif %}
         <span class="d">
@@ -57,7 +57,7 @@
         <a href="#" class="top">Top</a>
       </nav>
 
-      <a href="{{site.root_url}}"><img src="{{site.root_url}}images/branding/full-logo.svg" alt="Listenin&rsquo; logo" class="logo" /></a>
+      <a href="/"><img src="{{site.root_url}}images/branding/full-logo.svg" alt="Listenin&rsquo; logo" class="logo" /></a>
 
       <h4>&copy; jefff.co</h4>
     </footer>

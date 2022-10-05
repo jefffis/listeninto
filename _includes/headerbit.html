@@ -28,26 +28,26 @@
 
     {% if page.path contains '_posts' %}
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="http://listeninto.us/{{page.url}}" />
+    <meta name="twitter:url" content="{{site.root_url}}{{page.url}}" />
     <meta name="twitter:title" content="What {{page.title_prefix}} {{page.title}} listenin&rsquo; to?" />
     <meta name="twitter:description" content="{{page.bio}}" />
     {% if page.band_logo %}
-    <meta name="twitter:image" content="http://listeninto.us/images/bands/{{page.band_prefix}}/logo.jpg" />
-    <meta property="og:image" content="http://listeninto.us/images/bands/{{page.band_prefix}}/logo.jpg"/>
+    <meta name="twitter:image" content="{{site.root_url}}images/bands/{{page.band_prefix}}/logo.jpg" />
+    <meta property="og:image" content="{{site.root_url}}images/bands/{{page.band_prefix}}/logo.jpg"/>
     {% else %}
-    <meta name="twitter:image" content="http://listeninto.us/images/branding/favicon-r-l.png" />
-    <meta property="og:image" content="http://listeninto.us/images/branding/favicon-r-l.png"/>
+    <meta name="twitter:image" content="{{site.root_url}}images/branding/favicon-r-l.png" />
+    <meta property="og:image" content="{{site.root_url}}images/branding/favicon-r-l.png"/>
     {% endif %}
     <meta property="og:title" content="What {{page.title_prefix}} {{page.title}} listenin&rsquo; to?"/>
     <meta property="og:site_name" content="Listenin&rsquo; To"/>
     <meta property="og:description" content="{{page.bio}}" />
     {% else %}
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="http://listeninto.us/" />
+    <meta name="twitter:url" content="{{site.root_url}}" />
     <meta name="twitter:title" content="What are bands REALLY listenin&rsquo; to?" />
     <meta name="twitter:description" content="A curated site for music fans who want to know who bands REALLY listen to." />
-    <meta name="twitter:image" content="http://listeninto.us/images/branding/favicon-r-l.png" />
-    <meta property="og:image" content="http://listeninto.us/images/branding/favicon-r-l.png"/>
+    <meta name="twitter:image" content="{{site.root_url}}images/branding/favicon-r-l.png" />
+    <meta property="og:image" content="{{site.root_url}}images/branding/favicon-r-l.png"/>
     <meta property="og:title" content="What are bands REALLY listenin&rsquo; to?"/>
     <meta property="og:site_name" content="Listenin&rsquo; To"/>
     <meta property="og:description" content="A curated site for music fans who want to know who bands REALLY listen to." />
@@ -57,12 +57,12 @@
     <link rel="canonical" href="http://listeninto.us{{page.url}}" />
     {% else %}
     {% if page.url == '/index.html' %}
-    <link rel="canonical" href="http://listeninto.us/" />
+    <link rel="canonical" href="{{site.root_url}}" />
     {% endif %}
     {% if page.url == '/bands.html' %}
-    <link rel="canonical" href="http://listeninto.us/bands.html" />
+    <link rel="canonical" href="{{site.root_url}}bands.html" />
     {% endif %}
     {% if page.url == '/wtf.html' %}
-    <link rel="canonical" href="http://listeninto.us/wtf.html" />
+    <link rel="canonical" href="{{site.root_url}}wtf.html" />
     {% endif %}
     {% endif %}
