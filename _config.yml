@@ -3,4 +3,4 @@ markdown: redcarpet
 highlighter: true
 permalink: /:title
 minify_html: false
-root_url: https://wtf.jefff.co/tourin/
+root_url: https://heroic-blancmange-a2f8aa.netlify.app/
