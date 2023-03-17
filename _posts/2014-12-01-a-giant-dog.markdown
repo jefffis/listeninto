@@ -5,7 +5,7 @@ title_prefix: is
 band_date: 'December 1st, 2014'
 band_prefix: a-giant-dog
 band_logo: false
-band_url: http://agiantdog.com/
+band_url: https://agiantdog.com/
 bio: A Giant Dog is a five person Delta blues & classic Country inspired rock band hailing from Austin, Texas.
 photo_details: #whitemystery
 intro: 'A Giant Dog is a five person <strong>Delta blues inspired rock band</strong> hailing from Austin, Texas.'
@@ -16,11 +16,11 @@ band_category: wmband
 #playlist_title: WAM BAM THANK YOU GLAM
 #playlist_desc: 'This is a <strong>collection of ten songs that unite glitter and gusto</strong>. Starting with the vintage originals, like T. Rex and Sweet, to modern day rock &rsquo;n&rsquo; roll aliens, like Sam Flax and The Dandy Warhols, this playlist include tracks for White Mystery&rsquo;s performance opening the David Bowie exhibit on Tuesday, September 23, 2014 at the Museum of Contemporary Art.'
 albums: '<li>Bone</li><li>Fight</li><li>Dammit Pomegranate b​/​w Can&rsquo;t Complain (EP)</li><li>House (EP)</li>'
-playlist: http://www.youtube.com/playlist?list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq
+playlist: https://www.youtube.com/playlist?list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq
 playlist_site: Youtube
 artists:
  - name: The Nerves
-   infourl: 'http://en.wikipedia.org/wiki/The_Nerves'
+   infourl: 'https://en.wikipedia.org/wiki/The_Nerves'
    art:
     - src: '/images/bands/a-giant-dog/nerves.jpg'
    songs: 
@@ -28,7 +28,7 @@ artists:
       info: 'We like the energy. The Nerves have a sense of urgency to their music and know how to give rock and roll a tropical twist.'
       url: 'https://www.youtube.com/watch?v=agB5eYp198o&list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq&index=1'
  - name: Wyatt Blair
-   infourl: 'http://wyattblair.bandcamp.com/'
+   infourl: 'https://wyattblair.bandcamp.com/'
    art:
     - src: '/images/bands/a-giant-dog/wyatt-blair.jpg'
    songs: 
@@ -36,7 +36,7 @@ artists:
       info: 'Andrew saw this band play live at Hotel Vegas one night while he was working the door. He puts on this song a lot when he&rsquo;s drunk. It&rsquo;s like Sade banged Wreckless Eric.'
       url: 'https://www.youtube.com/watch?v=PmN1ctAr16o&list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq&index=2'
  - name: ELO
-   infourl: 'http://en.wikipedia.org/wiki/Electric_Light_Orchestra'
+   infourl: 'https://en.wikipedia.org/wiki/Electric_Light_Orchestra'
    art:
     - src: '/images/bands/a-giant-dog/elo.jpg'
    songs: 
@@ -44,7 +44,7 @@ artists:
       info: 'The trippy beginning to this song causes it to stand out from the rest, but we love anything ELO. Their attention to detail is inspiring.'
       url: 'https://www.youtube.com/watch?v=lvBOZCrJsAI&list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq&index=3'
  - name: Sparks
-   infourl: 'http://en.wikipedia.org/wiki/Sparks_%28band%29'
+   infourl: 'https://en.wikipedia.org/wiki/Sparks_%28band%29'
    art:
     - src: '/images/bands/a-giant-dog/sparks.jpg'
    songs: 
@@ -60,7 +60,7 @@ artists:
       info: 'Anytime Sabrina puts this on at a party people think they&rsquo;re Blondie but they&rsquo;re not! This is an under the radar punk band from Minneapolis in the late 70&rsquo;s-early 80&rsquo;s.  The lead singer was in high school when the band started. She bangs piano and has the sexiest voice.'
       url: 'https://www.youtube.com/watch?v=dqrlqeZFrkY&list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq&index=5'
  - name: Black Sabbath
-   infourl: 'http://en.wikipedia.org/wiki/Black_Sabbath'
+   infourl: 'https://en.wikipedia.org/wiki/Black_Sabbath'
    art:
     - src: '/images/bands/a-giant-dog/black-sabbath.jpg'
    songs: 
@@ -68,7 +68,7 @@ artists:
       info: 'What the fuck is with Sabbath doing a medley? We like their sense of drama and the points when the music sounds almost classical.'
       url: 'https://www.youtube.com/watch?v=gnGo_ta6gbs&list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq&index=6'
  - name: Everly Brothers
-   infourl: 'http://en.wikipedia.org/wiki/The_Everly_Brothers'
+   infourl: 'https://en.wikipedia.org/wiki/The_Everly_Brothers'
    art:
     - src: '/images/bands/a-giant-dog/everly-brothers.jpg'
    songs: 
@@ -76,7 +76,7 @@ artists:
       info: 'Nazareth, Emmylou and Gram do awesome covers of this song.  The melody is breathtaking. Andrew and Sabrina are conducting a study on their style of harmonizing.'
       url: 'https://www.youtube.com/watch?v=aUro7H6IHus&list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq&index=7'
  - name: Devo
-   infourl: 'http://en.wikipedia.org/wiki/Devo'
+   infourl: 'https://en.wikipedia.org/wiki/Devo'
    art:
     - src: '/images/bands/a-giant-dog/devo.jpg'
    songs: 
@@ -84,7 +84,7 @@ artists:
       info: 'The whole Freedom of Choice album is cool.  Their vocals and lyrics and energy are crazy and exciting.'
       url: 'https://www.youtube.com/watch?v=g4-2onb62y8&list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq&index=8'
  - name: The Troggs
-   infourl: 'http://en.wikipedia.org/wiki/The_Troggs'
+   infourl: 'https://en.wikipedia.org/wiki/The_Troggs'
    art:
     - src: '/images/bands/a-giant-dog/the-troggs.jpg'
    songs: 
@@ -92,7 +92,7 @@ artists:
       info: 'This song is pure.'
       url: 'https://www.youtube.com/watch?v=4qHX493bB3U&list=PLksXhY_1sE8Cc_f1YP8xBzNanSxvpLCxq&index=9'
  - name: The Dictators
-   infourl: 'http://en.wikipedia.org/wiki/The_Dictators'
+   infourl: 'https://en.wikipedia.org/wiki/The_Dictators'
    art:
     - src: '/images/bands/a-giant-dog/dictators.jpg'
    songs: 
@@ -105,9 +105,9 @@ Made up of Andrew, Andy, Graham, Matt, and Sabrina; **A Giant Dog is a group of 
 
 **So why the name A Giant Dog**? Because Andrew takes pleasure in creating awkward situations for other people. He wanted a non-sequitur name that contained an indefinite article.
 
-But where do they gather inspiration from? <a href="http://en.wikipedia.org/wiki/Jack_White" target="_blank">Jack White</a> has been a huge influence;  whetting their appettites for Delta blues and classic Country. A few other musical influences include <strong>Etta James</strong>, <strong>Randy Newman</strong>, <strong>The Beatles</strong>, <strong>Sam Cooke</strong> and <strong>Gino Washington</strong>. Coincidentally, they are also inspired by washing machines, paintings, record players, the squeal of the shower pipes, impulsive behavior, cynicism, and loss.
+But where do they gather inspiration from? <a href="https://en.wikipedia.org/wiki/Jack_White" target="_blank">Jack White</a> has been a huge influence;  whetting their appettites for Delta blues and classic Country. A few other musical influences include <strong>Etta James</strong>, <strong>Randy Newman</strong>, <strong>The Beatles</strong>, <strong>Sam Cooke</strong> and <strong>Gino Washington</strong>. Coincidentally, they are also inspired by washing machines, paintings, record players, the squeal of the shower pipes, impulsive behavior, cynicism, and loss.
 
 So, what are they up to when they are not making music? In their own words: **eating meat and making love.**
 
 Want to stay up to date with them? You can find them
-<a href="https://www.facebook.com/agiantdog" target="_blank">on Facebook</a>, <a href="https://twitter.com/agiantdog" target="_blank">on Twitter</a>, or on <a href="http://www.whitemystery.com" target="_blank">their website</a>. Now, onto the good stuff!
+<a href="https://www.facebook.com/agiantdog" target="_blank">on Facebook</a>, <a href="https://twitter.com/agiantdog" target="_blank">on Twitter</a>, or on <a href="https://www.whitemystery.com" target="_blank">their website</a>. Now, onto the good stuff!

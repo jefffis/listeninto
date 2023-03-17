@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: wmband
-playlist: http://www.youtube.com/playlist?list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX8
+playlist: https://www.youtube.com/playlist?list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX8
 playlist_site: Youtube
 artists:
  - name: David Bowie
@@ -66,6 +66,6 @@ artists:
     - src: '/images/bands/white-mystery/warhol.jpg'
    songs: 
     - song: Eating A Hamburger
-      info: 'This <a href="http://stationtostation.com/andy-warhol-eats-a-hamburger/" target="_blank">article sums up the video</a> here pretty damn well.'
+      info: 'This <a href="https://stationtostation.com/andy-warhol-eats-a-hamburger/" target="_blank">article sums up the video</a> here pretty damn well.'
       url: 'https://www.youtube.com/watch?v=Ejr9KBQzQPM&index=9&list=PLTl1hnx5xVLYMEec9jxT-IYoanX3ISPX8'
 ---
