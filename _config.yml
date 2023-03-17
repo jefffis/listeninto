@@ -3,4 +3,4 @@ markdown: redcarpet
 highlighter: true
 permalink: /:title
 minify_html: false
-root_url: https://wtf.jefff.co/listeninto/
+root_url: https://wtf.jefff.co/tourin/
